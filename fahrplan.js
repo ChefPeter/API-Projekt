@@ -8,7 +8,7 @@ function aufrufFahrplan(){
 }
 
 function aufrufWetter(){
-    mytime = setTimeout('einlesenWetter()', 300000);
+    mytime = setTimeout('einlesenWetter()', 10000);
 }
 
 function einlesen(){
@@ -27,7 +27,7 @@ function einlesen(){
 
 function einlesenWetter(){
     //console.log("Test");
-    fetch("api.openweathermap.org/data/2.5/weather?lat={46.715}&lon={11.656}&appid=c36e916cb8cfa07117ad7152b392d247")
+    fetch("http://daten.buergernetz.bz.it/services/weather/station?categoryId=1&lang=de&format=json")
         .then(response => {
             if (response.ok) {
                 return response.json();
@@ -43,14 +43,17 @@ function wetter(data){
     let tempId = "";
     let niederId = "";
     let windId = "";
+    let brixen = data.rows.filter(e => e.name == "Brixen - Vahrn")[0];
 
-    tempId = "linie";
-    niederId = "ziel";
-    windId = "abfahrt";
+    console.log(brixen);
+
+    tempId = "temp";
+    niederId = "nieder";
+    windId = "wind";
     
-    document.getElementById(tempId).innerHTML = data;
-    document.getElementById(niederId).innerHTML;
-    document.getElementById(niederId).innerHTML;
+    document.getElementById(tempId).innerHTML = "&nbsp;" + brixen.t;
+    document.getElementById(niederId).innerHTML = "&nbsp;" + brixen.n;
+    document.getElementById(windId).innerHTML = "&nbsp;" + brixen.p;
 
     aufrufWetter();
 }
@@ -62,7 +65,6 @@ function kontrolle(data){
     let abfahrtId = "";
     let minu = 0;
     let stunde = 0;
-    let dauer = 0;
 
     for(let i=0; i<14; i++){
         //console.log(data.departureList[i].servingLine.direction);
@@ -102,5 +104,6 @@ function display_ct7(){ //Findet die derzeitige Uhrzeit und das Aktuelle Datum
     display_c7();
 }
 
+einlesenWetter();
 einlesen();
 display_c7();
