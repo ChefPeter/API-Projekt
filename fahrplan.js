@@ -27,7 +27,7 @@ function einlesen(){
 
 function einlesenWetter(){
     //console.log("Test");
-    fetch("http://daten.buergernetz.bz.it/services/weather/station?categoryId=1&lang=de&format=json")
+    fetch("api.openweathermap.org/data/2.5/weather?lat={46.715}&lon={11.656}&appid=c36e916cb8cfa07117ad7152b392d247")
         .then(response => {
             if (response.ok) {
                 return response.json();
@@ -39,7 +39,7 @@ function einlesenWetter(){
         .then(json => wetter(json));
 }
 
-function wetter(){
+function wetter(data){
     let tempId = "";
     let niederId = "";
     let windId = "";
@@ -48,7 +48,7 @@ function wetter(){
     niederId = "ziel";
     windId = "abfahrt";
     
-    document.getElementById(tempId).innerHTML;
+    document.getElementById(tempId).innerHTML = data;
     document.getElementById(niederId).innerHTML;
     document.getElementById(niederId).innerHTML;
 
@@ -83,7 +83,7 @@ function kontrolle(data){
     }
 }
 
-function display_ct7(){
+function display_ct7(){ //Findet die derzeitige Uhrzeit und das Aktuelle Datum
     var x = new Date()
     var ampm = x.getHours( ) >= 12 ? '' : '';
     hours = x.getHours();
