@@ -49,8 +49,8 @@ function wetter(data){
     niederId = "nieder";
     windId = "wind";
     
-    document.getElementById(tempId).innerHTML = "&nbsp;" + brixen.t;
-    document.getElementById(niederId).innerHTML = "&nbsp;" + brixen.n;
+    document.getElementById(tempId).innerHTML = "&nbsp;" + brixen.t + "°C";
+    document.getElementById(niederId).innerHTML = "&nbsp;" + brixen.n + "ml Niederschlag";
     document.getElementById(windId).innerHTML = "&nbsp;" + brixen.p;
 
     aufrufWetter();
