@@ -7,6 +7,10 @@ function aufrufFahrplan(){
     mytime = setTimeout('einlesen()', 10000);
 }
 
+function aufrufWetter(){
+    mytime = setTimeout('einlesenWetter()', 300000);
+}
+
 function einlesen(){
     //console.log("Test");
     fetch("https://efa.sta.bz.it/apb/XML_DM_REQUEST?&locationServerActive=1&stateless=1&type_dm=any&name_dm=Brixen%20Brixen%20Dantestra%C3%9Fe&mode=direct&outputFormat=json")
@@ -19,6 +23,36 @@ function einlesen(){
             }
         })
         .then(json => kontrolle(json));
+}
+
+function einlesenWetter(){
+    //console.log("Test");
+    fetch("http://daten.buergernetz.bz.it/services/weather/station?categoryId=1&lang=de&format=json")
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                aufrufWetter();
+                //throw new Error('Something went wrong');
+            }
+        })
+        .then(json => wetter(json));
+}
+
+function wetter(){
+    let tempId = "";
+    let niederId = "";
+    let windId = "";
+
+    tempId = "linie";
+    niederId = "ziel";
+    windId = "abfahrt";
+    
+    document.getElementById(tempId).innerHTML;
+    document.getElementById(niederId).innerHTML;
+    document.getElementById(niederId).innerHTML;
+
+    aufrufWetter();
 }
 
 function kontrolle(data){
