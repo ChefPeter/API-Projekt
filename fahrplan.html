@@ -13,14 +13,16 @@
 
 <body>
     <div id="fahrplan">
+        <div style="display: flex;">
 
-        <div id="datum">
-            <span id='zeit'></span>
-        </div>
+            <div id="abfahrt">
+                <h1 style="font-weight: bold;">Haltestelle: Dantestraße Brixen</h1>
+            </div>   
+            <div id="datum">
+                <span id='zeit'></span>
+            </div>
 
-        <div id="abfahrt">
-            <h1 style="font-weight: bold;">Haltestelle: Dantestraße Brixen</h1>
-        </div>            
+        </div>         
 
         <div id="formatierung">
             <table class="table table-striped" style="max-width: 70%; min-width: 70%;">
@@ -121,9 +123,13 @@
                     <h4 style="color: rgb(13, 122, 172);">
                         Wetter Brixen
                     </h4>
-                    <p">Temperatur:</p>
-                    <p>Luftfeuchtigkeit:</p>
-                    <p>Wind:</p>
+                    <div>
+                        <img src="./Wetter/grad.png" alt="" class="bilder">
+                        <br>
+                        <img src="./Wetter/niederschlag.png" alt="" class="bilder">
+                        <br>
+                        <img src="./Wetter/wind.png" alt="" class="bilder">
+                    </div>
                 </div>
                     
                 <div class="rand" style="margin-top: 30px;">
