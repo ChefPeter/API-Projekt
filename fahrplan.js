@@ -26,14 +26,12 @@ function einlesen(){
 }
 
 function einlesenWetter(){
-    //console.log("Test");
     fetch("http://daten.buergernetz.bz.it/services/weather/station?categoryId=1&lang=de&format=json")
         .then(response => {
             if (response.ok) {
                 return response.json();
             } else {
                 aufrufWetter();
-                //throw new Error('Something went wrong');
             }
         })
         .then(json => wetter(json));
