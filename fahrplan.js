@@ -87,15 +87,15 @@ function display_ct7(){ //Findet die derzeitige Uhrzeit und das Aktuelle Datum
     var x = new Date()
     var ampm = x.getHours( ) >= 12 ? '' : '';
     hours = x.getHours();
-    hours=hours.toString().length==1? 0+hours.toString() : hours;
-    var minutes=x.getMinutes().toString()
-    minutes=minutes.length==1 ? 0+minutes : minutes;
-    var seconds=x.getSeconds().toString()
-    seconds=seconds.length==1 ? 0+seconds : seconds;
-    var month=(x.getMonth() +1).toString();
-    month=month.length==1 ? 0+month : month;
-    var dt=x.getDate().toString();
-    dt=dt.length==1 ? 0+dt : dt;
+    hours = hours.toString().length==1? 0+hours.toString() : hours;
+    var minutes = x.getMinutes().toString()
+    minutes = minutes.length == 1 ? 0+minutes : minutes;
+    var seconds = x.getSeconds().toString()
+    seconds = seconds.length == 1 ? 0+seconds : seconds;
+    var month = (x.getMonth() +1).toString();
+    month = month.length == 1 ? 0+month : month;
+    var dt = x.getDate().toString();
+    dt = dt.length == 1 ? 0+dt : dt;
     var x1= dt + "/" + month + "/" + x.getFullYear(); 
     x1 = x1 + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
     document.getElementById('zeit').innerHTML = x1;
