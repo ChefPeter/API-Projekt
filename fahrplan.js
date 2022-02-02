@@ -3,15 +3,15 @@ function display_c7(){
     mytime=setTimeout('display_ct7()',refresh);
 }
 
-function aufrufFahrplan(){
-    mytime = setTimeout('einlesen()', 10000);
-}
+/* function aufrufFahrplan(){
+    mytime = setTimeout('einlesenFahrplan()', 10000);
+} */
 
 function aufrufWetter(){
     mytime = setTimeout('einlesenWetter()', 10000);
 }
 
-function einlesen(){
+function einlesenFahrplan(){
     //console.log("Test");
     fetch("https://efa.sta.bz.it/apb/XML_DM_REQUEST?&locationServerActive=1&stateless=1&type_dm=any&name_dm=Brixen%20Brixen%20Dantestra%C3%9Fe&mode=direct&outputFormat=json")
         .then(response => {
@@ -43,7 +43,7 @@ function wetter(data){
     let windId = "";
     let brixen = data.rows.filter(e => e.name == "Brixen - Vahrn")[0];
 
-    console.log(brixen);
+    //console.log(brixen);
 
     tempId = "temp";
     niederId = "nieder";
@@ -61,14 +61,17 @@ function kontrolle(data){
     let linieId = "";
     let zielId = "";
     let abfahrtId = "";
+    let countdown = "";
     let minu = 0;
     let stunde = 0;
+    let x = new Date();
 
     for(let i=0; i<14; i++){
         //console.log(data.departureList[i].servingLine.direction);
         linieId = "linie" + i;
         zielId = "ziel" + i;
         abfahrtId = "abfahrt" + i;
+        countdown = "countdown" + i;
         stunde = data.departureList[i].dateTime.hour;
         minu = data.departureList[i].dateTime.minute;
         
@@ -78,9 +81,18 @@ function kontrolle(data){
         
         if (minu<10) document.getElementById(abfahrtId).innerHTML = stunde + ":0" + minu;
         else document.getElementById(abfahrtId).innerHTML = stunde + ":" + minu;
-    
-        aufrufFahrplan();
+
+        if (x.getHours() > stunde) stunde + 24;
+        stunde = stunde - x.getHours();
+        minu = minu - x.getMinutes() + stunde * 60;
+        console.log(minu);
+        stunde = Math.floor(minu/60);
+        minu = minu - (stunde * 60);
+
+        if (stunde == 0) document.getElementById(countdown).innerHTML = "in " + minu + " min";
+        else document.getElementById(countdown).innerHTML = "in " + stunde + " h und " + minu + " min";
     }
+    //aufrufFahrplan();
 }
 
 function display_ct7(){ //Findet die derzeitige Uhrzeit und das Aktuelle Datum
@@ -100,8 +112,11 @@ function display_ct7(){ //Findet die derzeitige Uhrzeit und das Aktuelle Datum
     x1 = x1 + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
     document.getElementById('zeit').innerHTML = x1;
     display_c7();
+
+    //console.log(x.getSeconds());
+    if (x.getSeconds()==0) einlesenFahrplan();
 }
 
 einlesenWetter();
-einlesen();
+einlesenFahrplan();
 display_c7();
