@@ -26,7 +26,7 @@ function einlesen(){
 }
 
 function einlesenWetter(){
-    fetch("http://daten.buergernetz.bz.it/services/weather/station?categoryId=1&lang=de&format=json")
+    fetch("https://api.openweathermap.org/data/2.5/weather?lat=46.717996&lon=11.651795&appid=0556bd130943fa16cb0b4a5c3b3f9931&mode=json&units=metric&lang=de")
         .then(response => {
             if (response.ok) {
                 return response.json();
@@ -41,9 +41,9 @@ function wetter(data){
     let tempId = "";
     let niederId = "";
     let windId = "";
-    let brixen = data.rows.filter(e => e.name == "Brixen - Vahrn")[0];
 
-    console.log(brixen);
+    console.log(data)
+
 
     tempId = "temp";
     niederId = "nieder";
