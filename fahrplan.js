@@ -8,7 +8,7 @@ function display_c7(){
 } */
 
 function aufrufWetter(){
-    mytime = setTimeout('einlesenWetter()', 10000);
+    mytime = setTimeout('einlesenWetter()', 300000);
 }
 
 function einlesenFahrplan(){
@@ -38,19 +38,16 @@ function einlesenWetter(){
 }
 
 function wetter(data){
-    let tempId = "";
-    let niederId = "";
-    let windId = "";
-
+    
     console.log(data);
 
-    tempId = "temp";
-    niederId = "nieder";
-    windId = "wind";
+    let bild = "./Wetter/" + data.weather[0].icon + ".png";
+
+    document.getElementById("allgemein").src=bild;
     
-    document.getElementById(tempId).innerHTML = "&nbsp;" + brixen.t + "°C";
-    document.getElementById(niederId).innerHTML = "&nbsp;" + brixen.n + "ml Niederschlag";
-    document.getElementById(windId).innerHTML = "&nbsp;" + brixen.p;
+    document.getElementById("temp").innerHTML = "&nbsp;" + data.main.temp + "°C";
+    document.getElementById("nieder").innerHTML = "&nbsp;" + data.main.humidity + "% Luftfeuchtigkeit";
+    document.getElementById("wind").innerHTML = "&nbsp;" + data.wind.speed + "m/s";
 
     aufrufWetter();
 }
@@ -84,7 +81,7 @@ function fahrplan(data){
         if (x.getHours() > stunde) stunde + 24;
         stunde = stunde - x.getHours();
         minu = minu - x.getMinutes() + stunde * 60;
-        console.log(minu);
+        //console.log(minu);
         stunde = Math.floor(minu/60);
         minu = minu - (stunde * 60);
 
