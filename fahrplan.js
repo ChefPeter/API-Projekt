@@ -78,10 +78,11 @@ function fahrplan(data){
         if (minu<10) document.getElementById(abfahrtId).innerHTML = stunde + ":0" + minu;
         else document.getElementById(abfahrtId).innerHTML = stunde + ":" + minu;
 
-        if (x.getHours() > stunde) stunde + 24;
+        if (x.getHours() > stunde) stunde = parseInt(stunde) + 24;
+        //console.log(stunde);
         stunde = stunde - x.getHours();
         minu = minu - x.getMinutes() + stunde * 60;
-        //console.log(minu);
+        
         stunde = Math.floor(minu/60);
         minu = minu - (stunde * 60);
 
@@ -124,8 +125,12 @@ function einlesenXml(){
         }
         xmlhttp.send();
         xmlDoc=xmlhttp.responseXML;
-        console.log(xmlDoc);
+        //console.log(xmlDoc);
     }
+
+    var tagObj=xmlDoc.getElementsByTagName("infoText");
+    console.log(tagObj[0].textContent);
+    console.log(tagObj[1].textContent);
 }
 
 einlesenXml();
