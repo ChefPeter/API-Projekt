@@ -22,7 +22,7 @@ function einlesenFahrplan(){
                 //throw new Error('Something went wrong');
             }
         })
-        .then(json => kontrolle(json));
+        .then(json => fahrplan(json));
 }
 
 function einlesenWetter(){
@@ -56,7 +56,7 @@ function wetter(data){
     aufrufWetter();
 }
 
-function kontrolle(data){
+function fahrplan(data){
 
     let linieId = "";
     let zielId = "";
