@@ -113,6 +113,22 @@ function display_ct7(){ //Findet die derzeitige Uhrzeit und das Aktuelle Datum
     if (x.getSeconds()==0) einlesenFahrplan();
 }
 
+function einlesenXml(){
+
+    var xmlDoc;
+    if(typeof window.DOMParser != "undefined") {
+        xmlhttp=new XMLHttpRequest();
+        xmlhttp.open("GET","https://efa.sta.bz.it/apb/XML_DM_REQUEST?&locationServerActive=1&stateless=1&type_dm=any&name_dm=Brixen%20Brixen%20Dantestra%C3%9Fe&mode=direct",false);
+        if (xmlhttp.overrideMimeType){
+            xmlhttp.overrideMimeType('text/xml');
+        }
+        xmlhttp.send();
+        xmlDoc=xmlhttp.responseXML;
+        console.log(xmlDoc);
+    }
+}
+
+einlesenXml();
 einlesenWetter();
 einlesenFahrplan();
 display_c7();
