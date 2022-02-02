@@ -42,12 +42,7 @@ function wetter(data){
     let niederId = "";
     let windId = "";
 
-<<<<<<< HEAD
-    console.log(data)
-
-=======
-    //console.log(brixen);
->>>>>>> 81c98f41978108d4db4281e2c706408e1511cb19
+    console.log(data);
 
     tempId = "temp";
     niederId = "nieder";
