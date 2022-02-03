@@ -60,10 +60,6 @@
     margin-bottom: 10px;
 }
 
-.flex{
-    display: flex;
-}
-
 .wetter{
     padding: 10px;
     border-radius: 18px;
@@ -71,8 +67,10 @@
     background-image: url("./Wetter/h10d.png");
     background-size: 100%;
     opacity: 0.5;
-    z-index: 2;
 }
-.wetter:before{
-    
+
+div.flex{
+    display: flex;
+    opacity: 1.0;
 }
+
