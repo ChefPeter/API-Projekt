@@ -9,7 +9,6 @@
     justify-content: right;
     font-size: large; 
     font-weight: 550; 
-    color: rgb(13, 122, 172);
     min-width: 30%;
 }
 
@@ -26,7 +25,9 @@
     margin-top: 30px;
 }
 
-#formatierung{
+#tabelle{
+    min-height: 50%;
+    max-height: 50%;
     display: flex;
     margin-top: 30px;
 }
@@ -34,6 +35,10 @@
 #ort{
     color: rgb(13, 122, 172);
     margin-left: 3%;
+    font-weight: bold;
+}
+
+.wetterdaten{
     font-weight: bold;
 }
 
@@ -55,7 +60,12 @@
 .wetter{
     padding: 10px;
     border-radius: 18px;
-    margin-left:3%;
-    background-image: url("./Wetter/sonne.jpg" );
+    margin-left: 3%;
+    background-image: url("./Wetter/h10d.png");
     background-size: 100%;
+    opacity: 0.5;
+    z-index: 2;
+}
+.wetter:before{
+    
 }

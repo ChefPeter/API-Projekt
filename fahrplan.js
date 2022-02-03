@@ -38,12 +38,14 @@ function einlesenWetter(){
 }
 
 function wetter(data){
-    
-    console.log(data);
 
     let bild = "./Wetter/" + data.weather[0].icon + ".png";
+    let hintergrund = "url(./Wetter/" + "h" + data.weather[0].icon + ".png)";
 
-    document.getElementById("allgemein").src=bild;
+    console.log(hintergrund);
+
+    document.getElementById("allgemein").src = bild;
+    document.getElementsByClassName("wetter")[0].style.backgroundImage = hintergrund;
     
     document.getElementById("temp").innerHTML = "&nbsp;" + data.main.temp + "°C";
     document.getElementById("nieder").innerHTML = "&nbsp;" + data.main.humidity + "% Luftfeuchtigkeit";
