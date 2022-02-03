@@ -48,13 +48,16 @@
     padding: 10px;
 }
 
+.rand2{
+    border: 1px solid black; 
+    margin-left: 3%; 
+    padding: 10px;
+    
+}
+
 .bilder{
     width: 20px;
     margin-bottom: 10px;
-}
-
-.flex{
-    display: flex;
 }
 
 .wetter{
@@ -64,4 +67,9 @@
     background-image: url("");
     background-size: 100%;
     opacity: 0.5;
+}
+
+div.flex{
+    display: flex;
+    opacity: 1.0;
 }

@@ -92,6 +92,7 @@ function fahrplan(data){
         else document.getElementById(countdown).innerHTML = "in " + stunde + " h und " + minu + " min";
     }
     //aufrufFahrplan();
+    //einlesenXml(document);
 }
 
 function display_ct7(){ //Findet die derzeitige Uhrzeit und das Aktuelle Datum
@@ -130,10 +131,19 @@ function einlesenXml(){
         //console.log(xmlDoc);
     }
 
-    var tagObj=xmlDoc.getElementsByTagName("infoText");
-    console.log(tagObj[0].textContent);
-    console.log(tagObj[1].textContent);
+    var tagObj=xmlDoc.getElementsByTagName("infoLink");
+    console.log(tagObj.length);
+    
+    document.getElementById("informationstext").innerHTML = "hjk";
+
+    //for(let i=0; i<tagObj.length; i++)
+    console.log(tagObj[0].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue);
+    console.log(tagObj[0].getElementsByTagName("content")[0].childNodes[0].nodeValue);
+
+    //var typeValue = tagObj[0].getElementsByTagName("infoLinkText").nodeValue;
+    //var titleValue = tagObj[0].getElementsByTagName("title")[0].childNodes[0].nodeValue;
 }
+console.log(document);
 
 einlesenXml();
 einlesenWetter();
