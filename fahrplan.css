@@ -48,6 +48,13 @@
     padding: 10px;
 }
 
+.rand2{
+    border: 1px solid black; 
+    margin-left: 3%; 
+    padding: 10px;
+    
+}
+
 .bilder{
     width: 20px;
     margin-bottom: 10px;
