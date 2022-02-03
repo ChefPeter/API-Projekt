@@ -61,11 +61,7 @@
     padding: 10px;
     border-radius: 18px;
     margin-left: 3%;
-    background-image: url("./Wetter/h10d.png");
+    background-image: url("");
     background-size: 100%;
     opacity: 0.5;
-    z-index: 2;
-}
-.wetter:before{
-    
 }
