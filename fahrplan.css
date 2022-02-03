@@ -31,6 +31,12 @@
     margin-top: 30px;
 }
 
+#ort{
+    color: rgb(13, 122, 172);
+    margin-left: 3%;
+    font-weight: bold;
+}
+
 .rand{
     border: 1px solid black; 
     margin-left: 3%; 
@@ -44,4 +50,12 @@
 
 .flex{
     display: flex;
+}
+
+.wetter{
+    padding: 10px;
+    border-radius: 18px;
+    margin-left:3%;
+    background-image: url("./Wetter/sonne.jpg" );
+    background-size: 100%;
 }
