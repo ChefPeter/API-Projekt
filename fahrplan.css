@@ -64,15 +64,11 @@
     padding: 10px;
     border-radius: 18px;
     margin-left: 3%;
-    background-image: 
-    linear-gradient(black, black)
-    url("");
-    background-blend-mode: saturation;
-    background-size: cover;
+    background-image: url("");
+    width: 100%;
+    background-size: 100%;
 }
-
 
 .flex{
     display: flex;
-    opacity: 1.0;
 }
