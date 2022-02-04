@@ -132,16 +132,17 @@ function einlesenXml(){
     }
 
     var tagObj=xmlDoc.getElementsByTagName("infoLink");
-    console.log(tagObj.length);
+    document.getElementById("informationstext").innerHTML = "";
+
+    for(let i=0; i<tagObj.length; i++){
+        document.getElementById("informationstext").innerHTML += "<h3>" + tagObj[i].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue + "</h3>";
+        document.getElementById("informationstext").innerHTML += tagObj[i].getElementsByTagName("content")[0].childNodes[0].nodeValue.replace(/<p>&nbsp;<\/p>/g, "") + "<br>";
+        
+        /* console.log(tagObj[i].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue);
+        console.log(tagObj[i].getElementsByTagName("content")[0].childNodes[0].nodeValue); */
+    }
     
-    document.getElementById("informationstext").innerHTML = "hjk";
 
-    //for(let i=0; i<tagObj.length; i++)
-    console.log(tagObj[0].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue);
-    console.log(tagObj[0].getElementsByTagName("content")[0].childNodes[0].nodeValue);
-
-    //var typeValue = tagObj[0].getElementsByTagName("infoLinkText").nodeValue;
-    //var titleValue = tagObj[0].getElementsByTagName("title")[0].childNodes[0].nodeValue;
 }
 console.log(document);
 
