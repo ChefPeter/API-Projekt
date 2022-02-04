@@ -49,11 +49,11 @@
 .rand{
     border: 1px solid black; 
     margin-left: 3%; 
+    margin-bottom: 15px;
     padding: 10px;
     overflow: scroll;
     overflow-x: hidden; /* Hide horizontal scrollbar */
     /* max-height: 45vh; */
-    max-height: 80vh;
 }
 
 .bilder{
