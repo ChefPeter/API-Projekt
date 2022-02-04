@@ -26,14 +26,19 @@
 }
 
 #tabelle{
-    max-height: 80vh;
     display: flex;
     margin-top: 30px;
+    max-height: 80vh;
 }
 
 #ort{
     color: rgb(13, 122, 172);
     margin-left: 3%;
+    font-weight: bold;
+}
+
+#wetterart{
+    margin: 10px;
     font-weight: bold;
 }
 
@@ -48,6 +53,7 @@
     overflow: scroll;
     overflow-x: hidden; /* Hide horizontal scrollbar */
     /* max-height: 45vh; */
+    max-height: 80vh;
 }
 
 .bilder{

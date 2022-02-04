@@ -44,13 +44,15 @@ function wetter(data){
 
     console.log(data);
 
+    console.log(data.weather.description);
+
     document.getElementById("allgemein").src = bild;
     document.getElementsByClassName("wetter")[0].style.backgroundImage = hintergrund;
     
     document.getElementById("temp").innerHTML = "&nbsp;" + data.main.temp + "°C";
     document.getElementById("nieder").innerHTML = "&nbsp;" + data.main.humidity + "% Luftfeuchtigkeit";
     document.getElementById("wind").innerHTML = "&nbsp;" + data.wind.speed + "m/s";
-    document.getElementById("wetterart").innerHTML = "&nbsp;" + data.weather.description + "m/s";
+    document.getElementById("wetterart").innerHTML = data.weather[0].description;
 
     aufrufWetter();
 }
