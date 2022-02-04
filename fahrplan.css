@@ -26,12 +26,14 @@
 #tabelle{
     display: flex;
     margin-top: 30px;
+    min-height: 60vh;
     max-height: 80vh;
 }
 
 #ort{
     color: rgb(13, 122, 172);
     margin-left: 3%;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
@@ -50,14 +52,11 @@
     margin-bottom: 15px;
     padding: 10px;
     overflow: scroll;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    /* max-height: 45vh; */
-    -webkit-animation-name: move;
-    -webkit-animation-duration: 4s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: right;
-    -webkit-animation-timing-function: linear;
-}
+    overflow-x: hidden;
+    -moz-animation: example4 10s ease-out;
+    -webkit-animation: example4 10s ease-out;
+    animation: example4 10s ease-out;
+   }
 
 .bilder{
     height: 30px;
@@ -70,6 +69,7 @@
     margin-left: 3%;
     background-image: url("");
     background-size: 100%;
+    
 }
 
 .flex{

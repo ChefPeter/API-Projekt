@@ -12,7 +12,6 @@ function aufrufWetter(){
 }
 
 function einlesenFahrplan(){
-    //console.log("Test");
     fetch("https://efa.sta.bz.it/apb/XML_DM_REQUEST?&locationServerActive=1&stateless=1&type_dm=any&name_dm=Brixen%20Brixen%20Dantestra%C3%9Fe&mode=direct&outputFormat=json")
         .then(response => {
             if (response.ok) {
