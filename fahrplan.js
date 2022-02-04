@@ -42,10 +42,6 @@ function wetter(data){
     let bild = "./Wetter/" + data.weather[0].icon + ".png";
     let hintergrund = "url(./Wetter/" + "h" + data.weather[0].icon + ".png)";
 
-    console.log(data);
-
-    console.log(data.weather.description);
-
     document.getElementById("allgemein").src = bild;
     document.getElementsByClassName("wetter")[0].style.backgroundImage = hintergrund;
     
