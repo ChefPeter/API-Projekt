@@ -42,17 +42,15 @@
     font-weight: bold;
 }
 
+.gesamt{
+    max-height: 50px;
+}
+
 .rand{
     border: 1px solid black; 
     margin-left: 3%; 
     padding: 10px;
-}
-
-.rand2{
-    border: 1px solid black; 
-    margin-left: 3%; 
-    padding: 10px;
-    
+    max-height: 70%;
 }
 
 .bilder{
