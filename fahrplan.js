@@ -42,7 +42,7 @@ function wetter(data){
     let bild = "./Wetter/" + data.weather[0].icon + ".png";
     let hintergrund = "url(./Wetter/" + "h" + data.weather[0].icon + ".png)";
 
-    console.log(hintergrund);
+    console.log(data);
 
     document.getElementById("allgemein").src = bild;
     document.getElementsByClassName("wetter")[0].style.backgroundImage = hintergrund;
@@ -50,6 +50,7 @@ function wetter(data){
     document.getElementById("temp").innerHTML = "&nbsp;" + data.main.temp + "°C";
     document.getElementById("nieder").innerHTML = "&nbsp;" + data.main.humidity + "% Luftfeuchtigkeit";
     document.getElementById("wind").innerHTML = "&nbsp;" + data.wind.speed + "m/s";
+    document.getElementById("wetterart").innerHTML = "&nbsp;" + data.weather.description + "m/s";
 
     aufrufWetter();
 }
