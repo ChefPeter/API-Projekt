@@ -56,6 +56,7 @@
     -moz-animation: example4 10s ease-out;
     -webkit-animation: example4 10s ease-out;
     animation: example4 10s ease-out;
+    overflow-y: hidden;
    }
 
 .bilder{
