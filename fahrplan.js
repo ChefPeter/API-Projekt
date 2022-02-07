@@ -37,7 +37,7 @@ function einlesenWetter(){
 }
 
 function wetter(data){
-
+    
     let bild = "./Wetter/" + data.weather[0].icon + ".png";
     let hintergrund = "url(./Wetter/" + "h" + data.weather[0].icon + ".png)";
 
