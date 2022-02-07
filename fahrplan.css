@@ -48,7 +48,8 @@
 
 .rand{
     border: 1px solid black; 
-    margin-left: 3%; 
+    margin-left: 3%;
+    margin-top: 50%;
     margin-bottom: 15px;
     padding: 10px;
     overflow: scroll;
