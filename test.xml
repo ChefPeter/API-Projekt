@@ -1,0 +1,1041 @@
+<itdRequest version="10.4.21.23" language="de" lengthUnit="METER" sessionID="0" client="NC6" clientIP="127.0.0.1" serverID="EFA02" virtDir="web" calcTime="277.265" now="2022-02-02T14:35:03" nowWD="4">
+<itdVersionInfo>
+<ptKernel>
+<appVersion>10.4.21.9 build 29.01.2022 02:30:43</appVersion>
+<dataFormat>EFA10_04_00</dataFormat>
+<dataBuild>2022-01-25T12:02:48</dataBuild>
+</ptKernel>
+</itdVersionInfo>
+<itdInfoLinkList>
+<itdBannerInfoList>
+<infoLink>
+<paramList>
+<param edit="0">
+<type>addInfoParam</type>
+<name>creationTime</name>
+<value>01/02/22 07:52</value>
+</param>
+<param edit="0">
+<type>addInfoParam</type>
+<name>lastModificationTime</name>
+<value>01/02/22 07:52</value>
+</param>
+</paramList>
+<infoLinkText>Fahrgastinformation / Coronavirus</infoLinkText>
+<infoLinkURL>http://10.240.145.20:80/ics/XSLT_CM_SHOWADDINFO_REQUEST?infoID=10849_STA&seqID=1</infoLinkURL>
+<infoLinkImage/>
+<infoText>
+<content><p>Aufgrund der erh&ouml;hten Corona-Infektionsf&auml;lle, dem daraus resultierenden Personalnotstand und der 2G-Pflicht kann es ab Montag, 10.01.2022 beim &ouml;ffentlichen Nahverkehr vermehrt zu Fahrtenausf&auml;llen kommen. Diese Ausf&auml;lle k&ouml;nnen auch kurzfristig auftreten.&nbsp;</p> <p>Die Betreiber sind bestrebt, die Fahrten w&auml;hrend der Hauptverkehrszeiten am Morgen (07 &ndash; 09 Uhr), zur Mittagszeit (12:30 &ndash; 14 Uhr) und am Abend (17 &ndash; 19 Uhr) zu gew&auml;hrleisten.&nbsp;</p> <p>Das s&uuml;dtirolmobil-Team ist bem&uuml;ht, die Fahrg&auml;ste zeitnah &uuml;ber Ausf&auml;lle bzw. Beeintr&auml;chtigungen zu informieren. Aus organisatorischen Gr&uuml;nden ist es jedoch nicht m&ouml;glich, jede einzelne gestrichene Kursfahrt anzuk&uuml;ndigen.&nbsp;</p></content>
+<subtitle>Fahrgastinformation / Coronavirus</subtitle>
+<subject>Ausfälle im öffentlichen Nahverkehr</subject>
+<additionalText/>
+<image/>
+<outputClientText>
+<htmlText/>
+<wmlText/>
+<smsText/>
+<speechText/>
+</outputClientText>
+</infoText>
+</infoLink>
+<infoLink>
+<paramList>
+<param edit="0">
+<type>addInfoParam</type>
+<name>creationTime</name>
+<value>01/04/21 12:15</value>
+</param>
+<param edit="0">
+<type>addInfoParam</type>
+<name>lastModificationTime</name>
+<value>01/02/22 07:38</value>
+</param>
+</paramList>
+<infoLinkText>Corona: neue Schutzregeln</infoLinkText>
+<infoLinkURL>http://10.240.145.20:80/ics/XSLT_CM_SHOWADDINFO_REQUEST?infoID=9868_STA&seqID=45</infoLinkURL>
+<infoLinkImage/>
+<infoText>
+<content><p>Ab Montag, <strong>10. J&auml;nner 2022</strong> gilt die <strong>Super Green Pass-Pflicht</strong> (2G) f&uuml;r Fahrg&auml;ste des &ouml;ffentlichen Nahverkehrs ab 12 Jahren. Folglich d&uuml;rfen die &ouml;ffentlichen Verkehrsmittel nur noch von Personen ben&uuml;tzt werden, die entweder von COVID genesen oder geimpft sind.&nbsp;</p> <p>&nbsp;</p> <p><strong>Ausnahme f&uuml;r Sch&uuml;lertransport&nbsp;&nbsp;</strong></p> <p>F&uuml;r Sch&uuml;ler gilt folgende Ausnahmeregelung:&nbsp;</p> <p>Die Sch&uuml;ler d&uuml;rfen ab 10.01. und bis 10.02.2022 alle &ouml;ffentlichen Verkehrsmittel und die Sch&uuml;lertransportdienste auch mit regul&auml;rem <strong>Green Pass</strong> (3G &ndash; genesen, geimpft, negativ getestet) benutzen; und zwar auf dem Weg zur Schule und von der Schule nach Hause.&nbsp;&nbsp;</p> <p>&nbsp;</p> <p>Die Anzahl der Fahrg&auml;ste in Bussen und Z&uuml;gen des &ouml;ffentlichen Nahverkehrs ist auf 80 % der zugelassenen Kapazit&auml;t beschr&auml;nkt. Das bedeutet, dass alle Sitzpl&auml;tze sowie eine bestimmte Anzahl an Stehpl&auml;tzen genutzt werden k&ouml;nnen.&nbsp;&nbsp;</p> <p>&nbsp;</p> <p>(Stand: 09.01.2022)&nbsp;&nbsp;</p></content>
+<subtitle>Corona: neue Schutzregeln</subtitle>
+<subject>Super Green Pass-Pflicht (2G) ab 10.01.2022 im öffentlichen Nahverkehr / Ausnahme für Schüler (3G-Pflicht)</subject>
+<additionalText/>
+<image/>
+<outputClientText>
+<htmlText/>
+<wmlText/>
+<smsText/>
+<speechText/>
+</outputClientText>
+</infoText>
+</infoLink>
+<infoLink>
+<paramList>
+<param edit="0">
+<type>addInfoParam</type>
+<name>creationTime</name>
+<value>01/02/22 08:08</value>
+</param>
+<param edit="0">
+<type>addInfoParam</type>
+<name>lastModificationTime</name>
+<value>01/02/22 08:09</value>
+</param>
+</paramList>
+<infoLinkText>Fahrgastinformation</infoLinkText>
+<infoLinkURL>http://10.240.145.20:80/ics/XSLT_CM_SHOWADDINFO_REQUEST?infoID=10163_STA&seqID=1</infoLinkURL>
+<infoLinkImage/>
+<infoText>
+<content><p>Bei einigen Verkaufsschaltern von Trenitalia gibt es aus organisatorischen Gr&uuml;nden im <span lang="DE">Februar</span> geringf&uuml;gige &Auml;nderungen der &Ouml;ffnungszeiten.</p> <p>&nbsp;</p> <p><strong>Bruneck</strong>&nbsp;am <span lang="DE">01., 04., 11. und 15. und 26. Februar</span> ge&ouml;ffnet von: 08:55 &ndash; 12:45 / 13:45 &ndash; 17:00 (verk&uuml;rzte &Ouml;ffnungszeiten)</p> <div> <p><strong>Innichen</strong>&nbsp;am <span lang="DE">02</span>., <span lang="DE">09</span>. 1<span lang="DE">4</span>., <span lang="DE">16</span>.<span lang="DE">, 21. Und 25. Februar</span> geschlossen.</p> </div> <p>&nbsp;</p> <p>&nbsp;</p></content>
+<subtitle>Fahrgastinformation</subtitle>
+<subject>Verkaufsschalter Trenitalia: geänderte Öffnungszeiten im Februar</subject>
+<additionalText/>
+<image/>
+<outputClientText>
+<htmlText/>
+<wmlText/>
+<smsText/>
+<speechText/>
+</outputClientText>
+</infoText>
+</infoLink>
+</itdBannerInfoList>
+</itdInfoLinkList>
+<itdDepartureMonitorRequest requestID="0">
+<itdOdv type="any" usage="dm" anyObjFilter="0">
+<itdOdvPlace state="identified" method="itp">
+<odvPlaceElem omc="22021011" placeID="4" value="22021011:4" span="0" type="remote" mainPlace="1" stateless="placeID:22021011:4">Brixen</odvPlaceElem>
+<odvPlaceInput/>
+</itdOdvPlace>
+<itdOdvName state="identified" method="itp">
+<itdMessage type="error" module="BROKER" code="-8010"/>
+<odvNameElem selected="1" matchQuality="376" x="702527.99728" y="322506.00350" mapName="APBV" id="66001143" omc="22021011" placeID="4" anyType="stop" anyTypeSort="2" locality="Brixen" objectName="Dantestraße" buildingName="" buildingNumber="" postCode="" streetName="" nameKey="" mainLocality="Brixen" stateless="66001143" gid="it:22021:1143">Brixen, Dantestraße</odvNameElem>
+<odvNameInput>Brixen Brixen Dantestraße</odvNameInput>
+</itdOdvName>
+<itdOdvAssignedStops select="0">
+<itdOdvAssignedStop stopID="66001143" x="702527.99728" y="322506.00350" mapName="APBV" value="66001143:Dantestraße" place="Brixen" nameWithPlace="Brixen, Dantestraße" distanceTime="0" isTransferStop="0" vm="100" gid="it:22021:1143">Dantestraße</itdOdvAssignedStop>
+</itdOdvAssignedStops>
+</itdOdv>
+<itdDateTime ttpFrom="20211101" ttpTo="20221210">
+<itdDate weekday="4" year="2022" month="2" day="2"/>
+<itdTime hour="14" minute="35"/>
+</itdDateTime>
+<itdDMDateTime deparr="dep"/>
+<itdDateRange>
+<itdDate day="02" month="02" year="2022" weekday="4"/>
+<itdDate day="03" month="02" year="2022" weekday="5"/>
+<itdDate day="04" month="02" year="2022" weekday="6"/>
+<itdDate day="05" month="02" year="2022" weekday="7"/>
+<itdDate day="06" month="02" year="2022" weekday="1"/>
+<itdDate day="07" month="02" year="2022" weekday="2"/>
+<itdDate day="08" month="02" year="2022" weekday="3"/>
+<itdDate day="09" month="02" year="2022" weekday="4"/>
+<itdDate day="10" month="02" year="2022" weekday="5"/>
+<itdDate day="11" month="02" year="2022" weekday="6"/>
+<itdDate day="12" month="02" year="2022" weekday="7"/>
+<itdDate day="13" month="02" year="2022" weekday="1"/>
+<itdDate day="14" month="02" year="2022" weekday="2"/>
+<itdDate day="15" month="02" year="2022" weekday="3"/>
+<itdDate day="16" month="02" year="2022" weekday="4"/>
+</itdDateRange>
+<itdTripOptions>
+<itdPtOptions active="-1" maxChanges="9" maxTime="360" maxWait="120" routeType="LEASTTIME" changeSpeed="normal" lineRestriction="400" useProxFootSearch="0" useProxFootSearchOrigin="0" useProxFootSearchDestination="0" bike="0" plane="0" noCrowded="0" noSolidStairs="0" noEscalators="0" noElevators="0" lowPlatformVhcl="0" wheelchair="0" needElevatedPlt="0" assistance="0" SOSAvail="0" noLonelyTransfer="0" illumTransfer="0" overgroundTransfer="0" noInsecurePlaces="0" privateTransport="0" activeImp="-1" activeCom="-1" activeSec="-1" twoSidedAlt="1" level="unknown">
+<excludedMeans>
+<meansElem value="0" selected="0">Zug</meansElem>
+<meansElem value="1" selected="0">S-Bahn</meansElem>
+<meansElem value="2" selected="0">U-Bahn</meansElem>
+<meansElem value="3" selected="0">Stadtbahn</meansElem>
+<meansElem value="4" selected="0">Straßen-/Trambahn</meansElem>
+<meansElem value="5" selected="0">Stadtbus</meansElem>
+<meansElem value="6" selected="0">Regionalbus</meansElem>
+<meansElem value="7" selected="0">Schnellbus</meansElem>
+<meansElem value="8" selected="0">Seil-/Zahnradbahn</meansElem>
+<meansElem value="9" selected="0">Schiff</meansElem>
+<meansElem value="10" selected="0">AST/Rufbus</meansElem>
+<meansElem value="11" selected="0">Sonstige</meansElem>
+<meansElem value="12" selected="0">Flugzeug</meansElem>
+<meansElem value="13" selected="0">Zug (Nahverkehr)</meansElem>
+<meansElem value="14" selected="0">Zug (Fernverkehr)</meansElem>
+<meansElem value="15" selected="0">Zug Fernv m Zuschlag</meansElem>
+<meansElem value="16" selected="0">Zug Fernv m spez Fpr</meansElem>
+<meansElem value="17" selected="0">SEV Schienenersatzv</meansElem>
+<meansElem value="18" selected="0">Zug Shuttle</meansElem>
+<meansElem value="19" selected="0">Bürgerbus</meansElem>
+</excludedMeans>
+</itdPtOptions>
+<itdItOptions>
+<itRouter logASCII="false" logSVG="false"/>
+<itPedestrian computeMonomodalTrip="false" computationType="PT_AND_IT" itIncidentData="false" useElevation="false" speedFactor="100" costFactor="0" distanceFactor="50" traveltimeFactor="50" noTunnel="false" noBridge="false" noFerry="false" maxTime="360" minTime="0" maxLength="2147483647" minLength="0" ignoreRestrictions="false" computeAlternativeRoutes="false" level="connection" prefIllum="0" prefToilet="0" prefBench="0" useHdcAcc="0" useGeoRefs="0"/>
+<itBicycle preferAsphaltTracks="false" preferGreenTracks="false" usePseudoRouting="true" useSignedRoute="false" cycleSpeed="20" prefHikePath="false" elevFac="50" useNetClasses="false" useDrawClasses="false" useEnv="false" inclEnvLeisureRoutes="false" inclEnvTrafficDensity="true" useSurfQuality="false" inclSurfQualGravel="false" inclSurfQualForrest="false" inclSurfQualSingleTrial="false" inclSurfQualCarry="false" useLayoutStructural="false" useLayoutDirections="false" prefPedestrianSeperated="false" useRecommRoute="false" computeMonomodalTrip="false" computationType="PT_AND_IT" itIncidentData="false" useElevation="false" speedFactor="100" costFactor="0" distanceFactor="50" traveltimeFactor="50" noTunnel="false" noBridge="false" noFerry="false" maxTime="120" minTime="0" maxLength="2147483647" minLength="0" ignoreRestrictions="false" computeAlternativeRoutes="false" level="unknown"/>
+<mitCar computeMonomodalTrip="false" computationType="PT_AND_IT" itIncidentData="false" useElevation="false" speedFactor="100" costFactor="0" distanceFactor="50" traveltimeFactor="50" noTunnel="false" noBridge="false" noFerry="false" maxTime="120" minTime="0" maxLength="2147483647" minLength="0" ignoreRestrictions="false" computeAlternativeRoutes="false" level="unknown" mitProfileData="false" mitIncidentData="false" mitOnlineData="false" noHighway="false" noTollRoad="false" prefSerSt="false"/>
+<mitTaxi computeMonomodalTrip="false" computationType="PT_AND_IT" itIncidentData="false" useElevation="false" speedFactor="100" costFactor="0" distanceFactor="50" traveltimeFactor="50" noTunnel="false" noBridge="false" noFerry="false" maxTime="120" minTime="0" maxLength="2147483647" minLength="0" ignoreRestrictions="false" computeAlternativeRoutes="false" level="unknown" mitProfileData="false" mitIncidentData="false" mitOnlineData="false" noHighway="false" noTollRoad="false" prefSerSt="false"/>
+<departureTransport>
+<individualTransport meansCode="100" value="7" speed="normal" selected="1"/>
+<individualTransport meansCode="101" value="10" speed="normal" selected="0"/>
+<individualTransport meansCode="102" value="10" speed="normal" selected="0"/>
+<individualTransport meansCode="103" value="10" speed="normal" selected="0"/>
+<individualTransport meansCode="104" value="10" speed="normal" selected="0"/>
+<individualTransport meansCode="105" value="10" speed="normal" selected="0"/>
+<individualTransport meansCode="106" value="120" speed="normal" selected="0"/>
+<individualTransport meansCode="107" value="120" speed="normal" selected="0"/>
+</departureTransport>
+</itdItOptions>
+<itdUsedOptions calcNumberOfTrips="4" dwellTime="00:00" prevDepsPerLeg="0" nextDepsPerLeg="0" calcCO2="0" realtime="0" realOnlyInfo="0" itemType="STOPLINK"/>
+</itdTripOptions>
+<itdServingLines>
+<itdServingLine selected="1" code="4" number="320.1" symbol="320.1" motType="5" productId="23" realtime="0" direction="Milland, Zeffer" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66002580" stateless="apb:02320:1:H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="4:0">
+<itdNoTrain name="Citybus"/>
+<motDivaParams line="02320" project="22a" direction="H" supplement="1" network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="170" symbol="170" motType="6" productId="20" realtime="0" direction="Brixen, Vinzentinum" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001145" stateless="apb:02170: :H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:0">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02170" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>022</code>
+<name>Simobil</name>
+<publicCode>Simobil</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="170" symbol="170" motType="6" productId="20" realtime="0" direction="Bozen, Busbahnhof" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66002958" stateless="apb:02170: :R:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:1">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02170" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>022</code>
+<name>Simobil</name>
+<publicCode>Simobil</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="310" symbol="310" motType="6" productId="20" realtime="0" direction="Sterzing, Nordpark" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001392" stateless="apb:85310: :H:22a" oK="1143" vF="20211212" vT="20221210" lineDisplay="line" index="6:2">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="85310" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>033</code>
+<name>Auto Rainer</name>
+<publicCode>Rainer</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="310" symbol="310" motType="6" productId="20" realtime="0" direction="Brixen, Bahnhof Brixen" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66000998" stateless="apb:85310: :R:22a" oK="1143" vF="20211212" vT="20221210" lineDisplay="line" index="6:3">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="85310" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>033</code>
+<name>Auto Rainer</name>
+<publicCode>Rainer</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="321" symbol="321" motType="6" productId="20" realtime="0" direction="Plose Gondellift" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001006" stateless="apb:02321: :H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:4">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02321" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="321" symbol="321" motType="6" productId="20" realtime="0" direction="Palmschoss" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001013" stateless="apb:02321: :R:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:5">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02321" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="322" symbol="322" motType="6" productId="20" realtime="0" direction="Brixen, Vinzentinum" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001145" stateless="apb:02322: :H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:6">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02322" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>031</code>
+<name>Pizzinini Mobility</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="322" symbol="322" motType="6" productId="20" realtime="0" direction="St. Leonhard" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001598" stateless="apb:02322: :R:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:7">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02322" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>031</code>
+<name>Pizzinini Mobility</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="325" symbol="325" motType="6" productId="20" realtime="0" direction="Lüsen, Dorf" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001582" stateless="apb:02325: :R:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:8">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02325" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>016</code>
+<name>Mellauner</name>
+<publicCode>Mellaun</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="328" symbol="328" motType="6" productId="20" realtime="0" direction="Schabs, Zentrum" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001171" stateless="apb:02328: :H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:9">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02328" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>012</code>
+<name>Klöcker</name>
+<publicCode>Klöcker</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="329" symbol="329" motType="6" productId="20" realtime="0" direction="Brixen, Bahnhof Brixen" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66000998" stateless="apb:02329: :H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:10">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02329" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>014</code>
+<name>Leitner</name>
+<publicCode>Leitner</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="329" symbol="329" motType="6" productId="20" realtime="0" direction="Schalders, Kirche" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001560" stateless="apb:02329: :R:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:11">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02329" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>014</code>
+<name>Leitner</name>
+<publicCode>Leitner</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="330" symbol="330" motType="6" productId="20" realtime="0" direction="Brixen, Krankenhaus" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001144" stateless="apb:00330: :H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:12">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00330" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="331" symbol="331" motType="6" productId="20" realtime="0" direction="Brixen, Krankenhaus" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001144" stateless="apb:00331: :H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:13">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00331" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="338" symbol="338" motType="6" productId="20" realtime="0" direction="Brixen, Krankenhaus" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001144" stateless="apb:00338: :H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:14">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00338" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="342" symbol="342" motType="6" productId="20" realtime="0" direction="Brixen, Vinzentinum" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001145" stateless="apb:02342: :H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:15">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02342" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="344" symbol="344" motType="6" productId="20" realtime="0" direction="Brixen, Busbahnhof" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66000999" stateless="apb:02344: :H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:16">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02344" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="345" symbol="345" motType="6" productId="20" realtime="0" direction="Brixen, Krankenhaus" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001144" stateless="apb:00345: :H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:17">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00345" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="346" symbol="346" motType="6" productId="20" realtime="0" direction="Brixen, Krankenhaus" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001144" stateless="apb:00346: :H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:18">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00346" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="351" symbol="351" motType="6" productId="20" realtime="0" direction="Brixen, Krankenhaus" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001144" stateless="apb:00351: :H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:19">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00351" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="351" symbol="351" motType="6" productId="20" realtime="0" direction="St. Ulrich, Antoniusplatz" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66000894" stateless="apb:00351: :R:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:20">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00351" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="401" symbol="401" motType="6" productId="20" realtime="0" direction="Brixen, Bahnhof Brixen" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66000998" stateless="apb:00401: :H:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:21">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00401" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="401" symbol="401" motType="6" productId="20" realtime="0" direction="Brixen, Bahnhof Brixen" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66000998" stateless="apb:02401:K:H:22a" oK="1143" vF="20211212" vT="20221210" lineDisplay="line" index="6:22">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02401" project="22a" direction="H" supplement="K" network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="401" symbol="401" motType="6" productId="20" realtime="0" direction="Brixen, Bahnhof Brixen" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66000998" stateless="apb:02401:G:H:22a" oK="1143" vF="20211212" vT="20221210" lineDisplay="line" index="6:23">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02401" project="22a" direction="H" supplement="G" network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="401" symbol="401" motType="6" productId="20" realtime="0" direction="Mühlbach, Bahnhof Mühlbach" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001177" stateless="apb:02401:K:R:22a" oK="1143" vF="20211212" vT="20221210" lineDisplay="line" index="6:24">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02401" project="22a" direction="R" supplement="K" network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="401" symbol="401" motType="6" productId="20" realtime="0" direction="Bruneck, Busbahnhof" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001195" stateless="apb:02401:G:R:22a" oK="1143" vF="20211212" vT="20221210" lineDisplay="line" index="6:25">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02401" project="22a" direction="R" supplement="G" network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+<itdServingLine selected="1" code="3" number="401" symbol="401" motType="6" productId="20" realtime="0" direction="Bruneck, Busbahnhof" valid="Fahrplan 2022" compound="0" TTB="0" STT="0" ROP="0" type="unknown" spTr="" destID="66001195" stateless="apb:00401: :R:22a" oK="1143" vF="20201213" vT="20211211" lineDisplay="line" index="6:26">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00401" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdServingLines>
+<itdDepartureList>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="4">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="14" minute="39" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="87" code="4" number="320.1" symbol="320.1" motType="5" mtSubcode="0" productId="23" realtime="0" direction="Albeins, Grundschule" directionFrom="Albeins, Grundschule" destID="66001543" stateless="apb:02320:1:H:22a" lineDisplay="line">
+<itdNoTrain name="Citybus"/>
+<motDivaParams line="02320" project="22a" direction="H" supplement="1" network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="11">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="14" minute="46" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="30" code="3" number="170" symbol="170" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Brixen, Vinzentinum" directionFrom="Bozen, Busbahnhof" destID="66001145" stateless="apb:02170: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02170" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>022</code>
+<name>Simobil</name>
+<publicCode>Simobil</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="12">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="14" minute="47" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="10" code="3" number="328" symbol="328" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Natz - Schabs" directionFrom="Brixen, Bahnhof Brixen" destID="66000998" stateless="apb:02328: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02328" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>012</code>
+<name>Klöcker</name>
+<publicCode>Kl�cker</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="14">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="14" minute="49" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="88" code="4" number="320.1" symbol="320.1" motType="5" mtSubcode="0" productId="23" realtime="0" direction="Vahrn, Post" directionFrom="Albeins, Grundschule" destID="66001543" stateless="apb:02320:1:H:22a" lineDisplay="line">
+<itdNoTrain name="Citybus"/>
+<motDivaParams line="02320" project="22a" direction="H" supplement="1" network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="19">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="14" minute="54" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="128" code="4" number="320.1" symbol="320.1" motType="5" mtSubcode="0" productId="23" realtime="0" direction="Milland, Zeffer" directionFrom="Milland, Zeffer" destID="66002580" stateless="apb:02320:1:H:22a" lineDisplay="line">
+<itdNoTrain name="Citybus"/>
+<motDivaParams line="02320" project="22a" direction="H" supplement="1" network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="19">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="14" minute="54" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="69" code="3" number="401" symbol="401" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Bruneck, Busbahnhof" directionFrom="Brixen, Bahnhof Brixen" destID="66001195" stateless="apb:00401: :R:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00401" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="23">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="14" minute="58" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="31" code="3" number="310" symbol="310" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Brixen, Bahnhof Brixen" directionFrom="Sterzing, Nordpark" destID="66000998" stateless="apb:85310: :R:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="85310" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>033</code>
+<name>Auto Rainer</name>
+<publicCode>Rainer</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="25">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="0" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="24" code="3" number="328" symbol="328" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Brixen, Bahnhof" directionFrom="Brixen, Bahnhof Brixen" destID="66000998" stateless="apb:02328: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02328" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>012</code>
+<name>Klöcker</name>
+<publicCode>Kl�cker</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="27">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="2" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="22" code="3" number="401" symbol="401" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Brixen, Bahnhof Brixen" directionFrom="Bruneck, Busbahnhof" destID="66000998" stateless="apb:00401: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00401" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="29">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="4" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="129" code="4" number="320.1" symbol="320.1" motType="5" mtSubcode="0" productId="23" realtime="0" direction="Vahrn, Post" directionFrom="Milland, Zeffer" destID="66002580" stateless="apb:02320:1:H:22a" lineDisplay="line">
+<itdNoTrain name="Citybus"/>
+<motDivaParams line="02320" project="22a" direction="H" supplement="1" network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="33">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="8" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="79" code="3" number="170" symbol="170" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Kastelruth, Busbahnhof" directionFrom="Brixen, Krankenhaus" destID="66002958" stateless="apb:02170: :R:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02170" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>022</code>
+<name>Simobil</name>
+<publicCode>Simobil</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="34">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="9" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="88" code="4" number="320.1" symbol="320.1" motType="5" mtSubcode="0" productId="23" realtime="0" direction="Albeins, Grundschule" directionFrom="Albeins, Grundschule" destID="66001543" stateless="apb:02320:1:H:22a" lineDisplay="line">
+<itdNoTrain name="Citybus"/>
+<motDivaParams line="02320" project="22a" direction="H" supplement="1" network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="40">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="15" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="11" code="3" number="310" symbol="310" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Sterzing, Nordpark" directionFrom="Brixen, Bahnhof Brixen" destID="66001392" stateless="apb:85310: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="85310" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>033</code>
+<name>Auto Rainer</name>
+<publicCode>Rainer</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="42">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="17" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="25" code="3" number="328" symbol="328" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Natz - Schabs" directionFrom="Brixen, Bahnhof Brixen" destID="66000998" stateless="apb:02328: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02328" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>012</code>
+<name>Klöcker</name>
+<publicCode>Kl�cker</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="44">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="19" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="89" code="4" number="320.1" symbol="320.1" motType="5" mtSubcode="0" productId="23" realtime="0" direction="Vahrn, Post" directionFrom="Albeins, Grundschule" destID="66001543" stateless="apb:02320:1:H:22a" lineDisplay="line">
+<itdNoTrain name="Citybus"/>
+<motDivaParams line="02320" project="22a" direction="H" supplement="1" network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="46" realtimeTripStatus="MONITORED">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="21" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="58" code="3" number="321" symbol="321" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Brixen, Bahnhof" directionFrom="Plose Gondellift" destID="66001006" stateless="apb:02321: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02321" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="49">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="24" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="70" code="3" number="401" symbol="401" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Bruneck, Busbahnhof" directionFrom="Brixen, Bahnhof Brixen" destID="66001195" stateless="apb:00401: :R:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00401" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="49">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="24" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="129" code="4" number="320.1" symbol="320.1" motType="5" mtSubcode="0" productId="23" realtime="0" direction="Milland, Zeffer" directionFrom="Milland, Zeffer" destID="66002580" stateless="apb:02320:1:H:22a" lineDisplay="line">
+<itdNoTrain name="Citybus"/>
+<motDivaParams line="02320" project="22a" direction="H" supplement="1" network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="55">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="30" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="10" code="3" number="328" symbol="328" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Brixen, Bahnhof" directionFrom="Brixen, Bahnhof Brixen" destID="66000998" stateless="apb:02328: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02328" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>012</code>
+<name>Klöcker</name>
+<publicCode>Kl�cker</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="57">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="32" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="23" code="3" number="401" symbol="401" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Brixen, Bahnhof Brixen" directionFrom="Bruneck, Busbahnhof" destID="66000998" stateless="apb:00401: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00401" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="59">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="34" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="130" code="4" number="320.1" symbol="320.1" motType="5" mtSubcode="0" productId="23" realtime="0" direction="Vahrn, Post" directionFrom="Milland, Zeffer" destID="66002580" stateless="apb:02320:1:H:22a" lineDisplay="line">
+<itdNoTrain name="Citybus"/>
+<motDivaParams line="02320" project="22a" direction="H" supplement="1" network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="64">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="39" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="89" code="4" number="320.1" symbol="320.1" motType="5" mtSubcode="0" productId="23" realtime="0" direction="Albeins, Grundschule" directionFrom="Albeins, Grundschule" destID="66001543" stateless="apb:02320:1:H:22a" lineDisplay="line">
+<itdNoTrain name="Citybus"/>
+<motDivaParams line="02320" project="22a" direction="H" supplement="1" network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="71">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="46" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="31" code="3" number="170" symbol="170" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Brixen, Vinzentinum" directionFrom="Bozen, Busbahnhof" destID="66001145" stateless="apb:02170: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02170" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>022</code>
+<name>Simobil</name>
+<publicCode>Simobil</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="72">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="47" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="11" code="3" number="328" symbol="328" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Natz - Schabs" directionFrom="Brixen, Bahnhof Brixen" destID="66000998" stateless="apb:02328: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02328" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>012</code>
+<name>Klöcker</name>
+<publicCode>Kl�cker</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="74">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="49" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="90" code="4" number="320.1" symbol="320.1" motType="5" mtSubcode="0" productId="23" realtime="0" direction="Vahrn, Post" directionFrom="Albeins, Grundschule" destID="66001543" stateless="apb:02320:1:H:22a" lineDisplay="line">
+<itdNoTrain name="Citybus"/>
+<motDivaParams line="02320" project="22a" direction="H" supplement="1" network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="77">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="52" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="8" code="3" number="401" symbol="401" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Mühlbach, Bahnhof Mühlbach" directionFrom="Brixen, Busbahnhof" destID="66001177" stateless="apb:02401:K:R:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02401" project="22a" direction="R" supplement="K" network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="79">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="54" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="71" code="3" number="401" symbol="401" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Bruneck, Busbahnhof" directionFrom="Brixen, Bahnhof Brixen" destID="66001195" stateless="apb:00401: :R:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00401" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="79">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="54" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="130" code="4" number="320.1" symbol="320.1" motType="5" mtSubcode="0" productId="23" realtime="0" direction="Milland, Zeffer" directionFrom="Milland, Zeffer" destID="66002580" stateless="apb:02320:1:H:22a" lineDisplay="line">
+<itdNoTrain name="Citybus"/>
+<motDivaParams line="02320" project="22a" direction="H" supplement="1" network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="82">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="57" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="32" code="3" number="342" symbol="342" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Latzfons, Dorf" directionFrom="Brixen, Dantestraße" destID="66001072" stateless="apb:02342: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02342" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="83">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="15" minute="58" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="32" code="3" number="310" symbol="310" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Brixen, Bahnhof Brixen" directionFrom="Sterzing, Nordpark" destID="66000998" stateless="apb:85310: :R:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="85310" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>033</code>
+<name>Auto Rainer</name>
+<publicCode>Rainer</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="85">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="16" minute="0" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="25" code="3" number="328" symbol="328" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Brixen, Bahnhof" directionFrom="Brixen, Bahnhof Brixen" destID="66000998" stateless="apb:02328: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02328" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>012</code>
+<name>Klöcker</name>
+<publicCode>Kl�cker</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="87">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="16" minute="2" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="24" code="3" number="401" symbol="401" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Brixen, Bahnhof Brixen" directionFrom="Bruneck, Busbahnhof" destID="66000998" stateless="apb:00401: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="00401" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>025</code>
+<name>SAD Bus</name>
+<publicCode>SAD</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="88">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="16" minute="3" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="11" code="3" number="329" symbol="329" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Schalders, Kirche" directionFrom="Brixen, Bahnhof Brixen" destID="66001560" stateless="apb:02329: :R:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02329" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>014</code>
+<name>Leitner</name>
+<publicCode>Leitner</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="88">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="16" minute="3" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="98" code="3" number="170" symbol="170" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Waidbruck, Starz" directionFrom="Brixen, Krankenhaus" destID="66000982" stateless="apb:02170: :R:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02170" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>022</code>
+<name>Simobil</name>
+<publicCode>Simobil</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="89">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="16" minute="4" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="131" code="4" number="320.1" symbol="320.1" motType="5" mtSubcode="0" productId="23" realtime="0" direction="Vahrn, Post" directionFrom="Milland, Zeffer" destID="66002580" stateless="apb:02320:1:H:22a" lineDisplay="line">
+<itdNoTrain name="Citybus"/>
+<motDivaParams line="02320" project="22a" direction="H" supplement="1" network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="90">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="16" minute="5" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="11" code="3" number="344" symbol="344" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Brixen, Busbahnhof" directionFrom="Brixen, Dantestraße" destID="66000999" stateless="apb:02344: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02344" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="93">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="16" minute="8" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="80" code="3" number="170" symbol="170" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Kastelruth, Busbahnhof" directionFrom="Brixen, Krankenhaus" destID="66002958" stateless="apb:02170: :R:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02170" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>022</code>
+<name>Simobil</name>
+<publicCode>Simobil</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="94">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="16" minute="9" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="11" code="3" number="321" symbol="321" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Palmschoss" directionFrom="Brixen, Krankenhaus" destID="66001013" stateless="apb:02321: :R:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="02321" project="22a" direction="R" supplement=" " network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702523" y="322503" mapName="APBV" area="0" platform="8296" gid="it:22021:1143" pointGid="it:22021:1143:0:8296" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="94">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="16" minute="9" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="90" code="4" number="320.1" symbol="320.1" motType="5" mtSubcode="0" productId="23" realtime="0" direction="Albeins, Grundschule" directionFrom="Albeins, Grundschule" destID="66001543" stateless="apb:02320:1:H:22a" lineDisplay="line">
+<itdNoTrain name="Citybus"/>
+<motDivaParams line="02320" project="22a" direction="H" supplement="1" network="apb"/>
+<itdOperator>
+<code>019</code>
+<name>Pizzinini</name>
+<publicCode>Pizzini</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+<itdDeparture stopID="66001143" x="702534" y="322511" mapName="APBV" area="0" platform="7001" gid="it:22021:1143" pointGid="it:22021:1143:0:7001" platformName="" plannedPlatformName="" stopName="Brixen, Dantestraße" nameWO="Dantestraße" countdown="100">
+<itdDateTime>
+<itdDate year="2022" month="2" day="2" weekday="4"/>
+<itdTime hour="16" minute="15" second="0" ap=""/>
+</itdDateTime>
+<itdServingLine key="12" code="3" number="310" symbol="310" motType="6" mtSubcode="0" productId="20" realtime="0" direction="Sterzing, Nordpark" directionFrom="Brixen, Bahnhof Brixen" destID="66001392" stateless="apb:85310: :H:22a" lineDisplay="line">
+<itdNoTrain name="Bus"/>
+<motDivaParams line="85310" project="22a" direction="H" supplement=" " network="apb"/>
+<itdOperator>
+<code>033</code>
+<name>Auto Rainer</name>
+<publicCode>Rainer</publicCode>
+</itdOperator>
+</itdServingLine>
+</itdDeparture>
+</itdDepartureList>
+</itdDepartureMonitorRequest>
+</itdRequest>

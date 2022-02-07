@@ -1,3 +1,6 @@
+let textVariable = 0;
+let tagObj;
+
 function display_c7(){
     var refresh=1000; // Refresh rate in milli seconds
     mytime=setTimeout('display_ct7()',refresh);
@@ -9,6 +12,10 @@ function display_c7(){
 
 function aufrufWetter(){
     mytime = setTimeout('einlesenWetter()', 150000);
+}
+
+function aufrufText(){
+    mytime = setTimeout('erneuereText()', 5000);
 }
 
 function einlesenFahrplan(){
@@ -129,20 +136,31 @@ function einlesenXml(){
         //console.log(xmlDoc);
     }
 
-    var tagObj=xmlDoc.getElementsByTagName("infoLink");
+    tagObj=xmlDoc.getElementsByTagName("infoLink");
     document.getElementById("informationstext").innerHTML = "";
 
-    for(let i=0; i<tagObj.length; i++){
+    /* for(let i=0; i<tagObj.length; i++){
         document.getElementById("informationstext").innerHTML += "<h3>" + tagObj[i].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue + "</h3>";
         document.getElementById("informationstext").innerHTML += tagObj[i].getElementsByTagName("content")[0].childNodes[0].nodeValue.replace(/<p>&nbsp;<\/p>/g, "") + "<br>";
         
-        /* console.log(tagObj[i].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue);
-        console.log(tagObj[i].getElementsByTagName("content")[0].childNodes[0].nodeValue); */
-    }
+        console.log(tagObj[i].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue);
+        console.log(tagObj[i].getElementsByTagName("content")[0].childNodes[0].nodeValue);
+    } */
     
-
+    erneuereText();
 }
-console.log(document);
+
+function erneuereText(){
+    document.getElementById("informationstext").innerHTML = "";
+    document.getElementById("informationstext").innerHTML += "<h3>" + tagObj[textVariable].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue + "</h3>";
+    document.getElementById("informationstext").innerHTML += tagObj[textVariable].getElementsByTagName("content")[0].childNodes[0].nodeValue.replace(/<p>&nbsp;<\/p>/g, "");
+
+    textVariable++;
+
+    if (tagObj.length == textVariable) textVariable=0;
+
+    aufrufText();
+}
 
 einlesenXml();
 einlesenWetter();
