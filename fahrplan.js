@@ -8,7 +8,7 @@ function display_c7(){
 } */
 
 function aufrufWetter(){
-    mytime = setTimeout('einlesenWetter()', 300000);
+    mytime = setTimeout('einlesenWetter()', 150000);
 }
 
 function einlesenFahrplan(){
@@ -37,7 +37,7 @@ function einlesenWetter(){
 }
 
 function wetter(data){
-    
+
     let bild = "./Wetter/" + data.weather[0].icon + ".png";
     let hintergrund = "url(./Wetter/" + "h" + data.weather[0].icon + ".png)";
 

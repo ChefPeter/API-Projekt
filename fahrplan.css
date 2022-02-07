@@ -53,9 +53,6 @@
     padding: 10px;
     overflow: scroll;
     overflow-x: hidden;
-    -moz-animation: example4 10s ease-out;
-    -webkit-animation: example4 10s ease-out;
-    animation: example4 10s ease-out;
    }
 
 .bilder{
@@ -69,7 +66,6 @@
     margin-left: 3%;
     background-image: url("");
     background-size: 100%;
-    
 }
 
 .flex{
