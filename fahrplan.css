@@ -25,6 +25,12 @@
     margin-left: 10px;
 }
 
+#allgemein1{
+    margin-right: 50px; 
+    width: 100px; 
+    margin-left: 10px;
+}
+
 #informationstext{
     margin-top: 30px;
 }
@@ -48,6 +54,11 @@
 }
 
 #wetterart{
+    margin: 10px;
+    font-weight: bold;
+}
+
+#wetterart1{
     margin: 10px;
     font-weight: bold;
 }

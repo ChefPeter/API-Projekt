@@ -84,6 +84,13 @@ function wetter(data){
     document.getElementById("wind").innerHTML = "&nbsp;" + data.wind.speed + "m/s";
     document.getElementById("wetterart").innerHTML = data.weather[0].description;
 
+    document.getElementById("allgemein1").src = bild;
+    document.getElementsByClassName("wetterMg")[0].style.backgroundImage = hintergrund;
+    
+    document.getElementById("nieder1").innerHTML = "&nbsp;" + data.main.humidity + "% Luftfeuchtigkeit";
+    document.getElementById("wind1").innerHTML = "&nbsp;" + data.wind.speed + "m/s";
+    document.getElementById("wetterart1").innerHTML = data.weather[0].description;
+
     aufrufWetter();
 }
 
