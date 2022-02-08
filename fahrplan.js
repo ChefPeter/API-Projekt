@@ -103,7 +103,6 @@ function fahrplan(data){
     let richtungId = "";
     let minu = 0;
     let stunde = 0;
-    let x = new Date();
 
     for(let i=0; i<14; i++){
         //console.log(data.departureList[i].servingLine.direction);
@@ -129,17 +128,15 @@ function fahrplan(data){
         if (minu<10) document.getElementById(abfahrtId).innerHTML = stunde + ":0" + minu;
         else document.getElementById(abfahrtId).innerHTML = stunde + ":" + minu;
 
-        if (x.getHours() > stunde) stunde = parseInt(stunde) + 24;
-        //console.log(stunde);
-        stunde = stunde - x.getHours();
-        minu = minu - x.getMinutes() + stunde * 60;
-        
+        minu = data.departureList[i].countdown;
         stunde = Math.floor(minu/60);
         minu = minu - (stunde * 60);
 
         if (stunde == 0) document.getElementById(countdown).innerHTML = "in " + minu + " min";
         else document.getElementById(countdown).innerHTML = "in " + stunde + " h und " + minu + " min";
     }
+
+    let brixen = data.rows.filter(e => e.name == "Brixen - Vahrn")[0];
     //aufrufFahrplan();
     //einlesenXml(document);
 }
@@ -182,21 +179,13 @@ function einlesenXml(){
 
     tagObj=xmlDoc.getElementsByTagName("infoLink");
     document.getElementById("informationstext").innerHTML = "";
-
-    /* for(let i=0; i<tagObj.length; i++){
-        document.getElementById("informationstext").innerHTML += "<h3>" + tagObj[i].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue + "</h3>";
-        document.getElementById("informationstext").innerHTML += tagObj[i].getElementsByTagName("content")[0].childNodes[0].nodeValue.replace(/<p>&nbsp;<\/p>/g, "") + "<br>";
-        
-        console.log(tagObj[i].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue);
-        console.log(tagObj[i].getElementsByTagName("content")[0].childNodes[0].nodeValue);
-    } */
     
     erneuereText();
 }
 
 function erneuereText(){
     document.getElementById("informationstext").innerHTML = "";
-    document.getElementById("informationstext").innerHTML += "<h4>" + tagObj[textVariable].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue + "</h4>";
+    document.getElementById("informationstext").innerHTML += "<h3>" + tagObj[textVariable].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue + "</h3>";
     document.getElementById("informationstext").innerHTML += tagObj[textVariable].getElementsByTagName("content")[0].childNodes[0].nodeValue.replace(/<p>&nbsp;<\/p>/g, "");
 
     textVariable++;
