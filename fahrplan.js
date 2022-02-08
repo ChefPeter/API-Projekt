@@ -15,7 +15,7 @@ function aufrufWetter(){
 }
 
 function aufrufTemp(){
-    mytime = setTimeout('einlesenTemperatur()', 150000);
+    mytime = setTimeout('einlesenTemperatur()', 50000);
 }
 
 function aufrufText(){
@@ -60,7 +60,9 @@ function einlesenWetter(){
 }
 
 function temperatur(data){
-    
+
+    document.getElementById("temp").innerHTML = "&nbsp;" +  + "°C";
+
     aufrufWetter();
 }
 
@@ -72,7 +74,6 @@ function wetter(data){
     document.getElementById("allgemein").src = bild;
     document.getElementsByClassName("wetter")[0].style.backgroundImage = hintergrund;
     
-    document.getElementById("temp").innerHTML = "&nbsp;" + data.main.temp + "°C";
     document.getElementById("nieder").innerHTML = "&nbsp;" + data.main.humidity + "% Luftfeuchtigkeit";
     document.getElementById("wind").innerHTML = "&nbsp;" + data.wind.speed + "m/s";
     document.getElementById("wetterart").innerHTML = data.weather[0].description;
