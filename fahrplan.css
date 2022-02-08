@@ -8,15 +8,15 @@
     display: flex;
     justify-content: right;
     font-size: large; 
-    font-weight: 550; 
-    min-width: 30%;
+    font-weight: 550;
+    min-width: 35%;
 }
 
 #abfahrt{
     text-align: center; 
     margin-top: 0; 
     color: rgb(13, 122, 172);
-    min-width: 70%;
+    min-width: 65%;
 }
 
 #allgemein{
@@ -73,6 +73,14 @@
 }
 
 .wetter{
+    padding: 10px;
+    border-radius: 18px;
+    margin-left: 3%;
+    background-image: url("");
+    background-size: 100%;
+}
+
+.wetterMg{
     padding: 10px;
     border-radius: 18px;
     margin-left: 3%;

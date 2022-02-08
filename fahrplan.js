@@ -60,8 +60,14 @@ function einlesenWetter(){
 }
 
 function temperatur(data){
+    let brixen;
 
-    document.getElementById("temp").innerHTML = "&nbsp;" +  + "°C";
+    data.rows.map((e) => {
+        if(e["name"] === "Brixen - Vahrn")
+            brixen = e;
+    });
+
+    document.getElementById("temp").innerHTML = "&nbsp;" + brixen.t + "°C";
 
     aufrufWetter();
 }
@@ -109,10 +115,10 @@ function fahrplan(data){
         console.log(data.departureList[i].servingLine.liErgRiProj.direction)
         
         if (data.departureList[i].servingLine.liErgRiProj.direction == "R"){
-            document.getElementById(richtungId).innerHTML = "Nord";
+            document.getElementById(richtungId).innerHTML = "Süd";
         }
         if (data.departureList[i].servingLine.liErgRiProj.direction == "H"){
-            document.getElementById(richtungId).innerHTML = "Süd";
+            document.getElementById(richtungId).innerHTML = "Nord";
         }
         
         if (minu<10) document.getElementById(abfahrtId).innerHTML = stunde + ":0" + minu;
@@ -198,4 +204,5 @@ function erneuereText(){
 einlesenXml();
 einlesenWetter();
 einlesenFahrplan();
+einlesenTemperatur();
 display_c7();
