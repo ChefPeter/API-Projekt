@@ -35,7 +35,7 @@ function einlesenFahrplan(){
         .then(json => fahrplan(json));
 }
 
-function einlesenTemperatur{
+function einlesenTemperatur(){
     fetch("http://daten.buergernetz.bz.it/services/weather/station?categoryId=1&lang=de&format=json")
     .then(response => {
         if (response.ok) {
@@ -60,7 +60,7 @@ function einlesenWetter(){
 }
 
 function temperatur(data){
-
+    
     aufrufWetter();
 }
 
