@@ -14,6 +14,10 @@ function aufrufWetter(){
     mytime = setTimeout('einlesenWetter()', 150000);
 }
 
+function aufrufTemp(){
+    mytime = setTimeout('einlesenTemperatur()', 150000);
+}
+
 function aufrufText(){
     mytime = setTimeout('erneuereText()', 5000);
 }
@@ -31,6 +35,18 @@ function einlesenFahrplan(){
         .then(json => fahrplan(json));
 }
 
+function einlesenTemperatur{
+    fetch("http://daten.buergernetz.bz.it/services/weather/station?categoryId=1&lang=de&format=json")
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        } else {
+            aufrufTemp();
+        }
+    })
+    .then(json => temperatur(json));
+}
+
 function einlesenWetter(){
     fetch("https://api.openweathermap.org/data/2.5/weather?lat=46.717996&lon=11.651795&appid=0556bd130943fa16cb0b4a5c3b3f9931&mode=json&units=metric&lang=de")
         .then(response => {
@@ -41,6 +57,11 @@ function einlesenWetter(){
             }
         })
         .then(json => wetter(json));
+}
+
+function temperatur(data){
+
+    aufrufWetter();
 }
 
 function wetter(data){
