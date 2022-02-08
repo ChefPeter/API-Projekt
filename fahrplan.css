@@ -103,11 +103,6 @@
     display: flex;
 }
 
-h3{
-    color: rgb(13, 122, 172);
-    font-weight: bold;
-}
-
 @media screen and (min-width: 1480px){
     .table, table-striped{
         max-width: 65%;
