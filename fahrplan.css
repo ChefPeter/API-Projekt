@@ -83,3 +83,18 @@
 .flex{
     display: flex;
 }
+
+@media screen and (min-width: 1480px){
+    .table, table-striped{
+        max-width: 65%;
+        min-width: 65%;
+        vertical-align: middle;
+    } 
+}
+@media screen and (max-width: 1481px){
+    .table, table-striped{
+        max-width: 60%;
+        min-width: 60%;
+        vertical-align: middle;
+    } 
+}
