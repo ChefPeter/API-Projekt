@@ -114,19 +114,10 @@ function fahrplan(data){
 
         console.log(data.departureList[i].servingLine.liErgRiProj.direction)
         
-<<<<<<< Updated upstream
-        if (data.departureList[i].servingLine.liErgRiProj.direction == "R"){
-            document.getElementById(richtungId).innerHTML = "Süd";
-        }
-        if (data.departureList[i].servingLine.liErgRiProj.direction == "H"){
-            document.getElementById(richtungId).innerHTML = "Nord";
-        }
-=======
         if (data.departureList[i].servingLine.liErgRiProj.direction == "R")
             document.getElementById(richtungId).innerHTML = "Süd";
         else if (data.departureList[i].servingLine.liErgRiProj.direction == "H")
             document.getElementById(richtungId).innerHTML = "Nord";
->>>>>>> Stashed changes
         
         if (minu<10) document.getElementById(abfahrtId).innerHTML = stunde + ":0" + minu;
         else document.getElementById(abfahrtId).innerHTML = stunde + ":" + minu;
