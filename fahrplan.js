@@ -65,6 +65,7 @@ function fahrplan(data){
     let zielId = "";
     let abfahrtId = "";
     let countdown = "";
+    let richtungId = "";
     let minu = 0;
     let stunde = 0;
     let x = new Date();
@@ -74,6 +75,7 @@ function fahrplan(data){
         linieId = "linie" + i;
         zielId = "ziel" + i;
         abfahrtId = "abfahrt" + i;
+        richtungId = "richtung" + i;
         countdown = "countdown" + i;
         stunde = data.departureList[i].dateTime.hour;
         minu = data.departureList[i].dateTime.minute;
@@ -81,6 +83,13 @@ function fahrplan(data){
 
         document.getElementById(linieId).innerHTML = data.departureList[i].servingLine.number;
         document.getElementById(zielId).innerHTML = data.departureList[i].servingLine.direction;
+
+        if (data.departureList[i].servingLine.direction.liErgRiProj.direction == "R"){
+            document.getElementById(richtungId).innerHTML = "Nord";
+        }
+        if (data.departureList[i].servingLine.direction.liErgRiProj.direction == "H"){
+            document.getElementById(richtungId).innerHTML = "Süd";
+        }
         
         if (minu<10) document.getElementById(abfahrtId).innerHTML = stunde + ":0" + minu;
         else document.getElementById(abfahrtId).innerHTML = stunde + ":" + minu;
@@ -152,7 +161,7 @@ function einlesenXml(){
 
 function erneuereText(){
     document.getElementById("informationstext").innerHTML = "";
-    document.getElementById("informationstext").innerHTML += "<h3>" + tagObj[textVariable].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue + "</h3>";
+    document.getElementById("informationstext").innerHTML += "<h4>" + tagObj[textVariable].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue + "</h4>";
     document.getElementById("informationstext").innerHTML += tagObj[textVariable].getElementsByTagName("content")[0].childNodes[0].nodeValue.replace(/<p>&nbsp;<\/p>/g, "");
 
     textVariable++;
