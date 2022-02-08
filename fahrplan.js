@@ -105,10 +105,12 @@ function fahrplan(data){
         document.getElementById(linieId).innerHTML = data.departureList[i].servingLine.number;
         document.getElementById(zielId).innerHTML = data.departureList[i].servingLine.direction;
 
-        if (data.departureList[i].servingLine.direction.liErgRiProj.direction == "R"){
+        console.log(data.departureList[i].servingLine.liErgRiProj.direction)
+        
+        if (data.departureList[i].servingLine.liErgRiProj.direction == "R"){
             document.getElementById(richtungId).innerHTML = "Nord";
         }
-        if (data.departureList[i].servingLine.direction.liErgRiProj.direction == "H"){
+        if (data.departureList[i].servingLine.liErgRiProj.direction == "H"){
             document.getElementById(richtungId).innerHTML = "Süd";
         }
         
