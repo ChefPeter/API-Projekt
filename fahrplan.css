@@ -19,16 +19,14 @@
     min-width: 65%;
 }
 
-#allgemein{
-    margin-right: 50px; 
-    width: 100px; 
-    margin-left: 10px;
+#allgemein{ 
+    width: 70px; 
+    align-items: center;
 }
 
-#allgemein1{
-    margin-right: 50px; 
-    width: 100px; 
-    margin-left: 10px;
+#allgemeinMg{
+    width: 70px; 
+    align-items: center;
 }
 
 #informationstext{
@@ -36,9 +34,9 @@
 }
 
 #fahrplan{
-    margin: 30px;
+    margin: 2%;
 }
-    
+
 #tabelle{
     display: flex;
     margin-top: 30px;
@@ -46,11 +44,17 @@
     max-height: 80vh;
 }
 
-#ort{
+.ort{
     color: rgb(13, 122, 172);
-    margin-left: 3%;
     margin-bottom: 10px;
+    margin-left: 3%;
     font-weight: bold;
+}
+
+.zentriert{
+    justify-content: center;
+    display: flex;
+    margin-top: 8px;
 }
 
 #wetterart{
@@ -58,9 +62,16 @@
     font-weight: bold;
 }
 
-#wetterart1{
+#wetterartMg{
     margin: 10px;
     font-weight: bold;
+}
+
+.hintergrund{
+    background-image: url("./Wetter/hintergrund.png");
+    border-radius: 18px;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .wetterdaten{
@@ -79,24 +90,25 @@
    }
 
 .bilder{
-    height: 30px;
-    margin-bottom: 10px;
+    height: 25px;
 }
 
 .wetter{
     padding: 10px;
     border-radius: 18px;
-    margin-left: 3%;
     background-image: url("");
-    background-size: 100%;
+    background-size: 110%;
+}
+
+.wetterAlgemein{
+    margin-left: 3%;
 }
 
 .wetterMg{
     padding: 10px;
     border-radius: 18px;
-    margin-left: 3%;
     background-image: url("");
-    background-size: 100%;
+    background-size: 110%;
 }
 
 .flex{
@@ -107,13 +119,12 @@
     .table, table-striped{
         max-width: 65%;
         min-width: 65%;
-        vertical-align: middle;
-    } 
+    }
+
 }
 @media screen and (max-width: 1481px){
     .table, table-striped{
         max-width: 60%;
         min-width: 60%;
-        vertical-align: middle;
     } 
 }
