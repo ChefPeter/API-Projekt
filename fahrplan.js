@@ -23,7 +23,7 @@ function aufrufTemp(){
     mytime = setTimeout('einlesenTemperatur()', 50000);
 }
 
-// Ruft die Funktion erneuereText() alle 20 sec auf
+// Ruft die Funktion erneuereText() alle 15 sec auf
 function aufrufText(){
     //console.log(zaehlVariable);
 
@@ -31,12 +31,12 @@ function aufrufText(){
         zaehlVariable = 1;
         erneuereText();
     }
-    else if (zaehlVariable%3600 == 0){
+    else if (zaehlVariable%240 == 0){
         zaehlVariable = 1;
         einlesenXml();
         
     }
-    else mytime = setTimeout('erneuereText()', 20000);
+    else mytime = setTimeout('erneuereText()', 15000);
     zaehlVariable++;
 }
 
@@ -125,14 +125,39 @@ function wetter(jsonData){
 
     let minTemp = 100.00;
     let maxTemp =-100.00;
+    let bilder = [];
     
     for (let i=0; i<17; i++){
         if (jsonData.list[i].dt_txt[9] == string[9]){
             if (jsonData.list[i].main.temp_min < minTemp) minTemp = jsonData.list[i].main.temp_min;
             if (jsonData.list[i].main.temp_max > maxTemp) maxTemp = jsonData.list[i].main.temp_max;
-        }
-        
+            bilder.push(jsonData.list[i].weather[0].icon);
+        } 
     }
+
+    bilder.sort();
+    bilder.reverse();
+
+    let vorheriges = bilder[0];
+    bilder.push()
+    let hoechstes = 0;
+    let aktuell = 1;
+    let bild1 = "";
+
+    for (let i=1; i<bilder.length; i++){
+        if (bilder[i] == vorheriges) aktuell++;
+        else if (aktuell <= hoechstes) aktuell = 1;
+        else {
+            bild1 = bilder[i-1];
+            hoechstes = aktuell;
+            aktuell = 1;
+        }
+        vorheriges = bilder[i];
+    }
+
+    console.log(bilder);
+    console.log(bild1 + ", Häufigkeit: " + hoechstes);
+
     console.log(minTemp + ", " + maxTemp);
 
     aufrufWetter();
