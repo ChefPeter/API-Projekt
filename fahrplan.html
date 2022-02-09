@@ -23,7 +23,7 @@
         </div>
 
         <div id="tabelle">
-            <table class="table table-striped">
+            <table class="table table-striped" style="vertical-align: middle;">
                 <tr>
                     <th style=" color: rgb(13, 122, 172);">Linie</th>
                     <th style=" color: rgb(13, 122, 172);">Ziel</th>
@@ -132,55 +132,57 @@
                
             </table>
             <div style="max-height: 100%; display:flex; flex-direction: column">
-                <h3 id="ort">
-                    Wetter Brixen
-                </h3>
+               <div class="flex">
+                    <h3 class="ort">
+                        Wetter Brixen
+                    </h3>         
+                    <h3 class="ort">
+                        Wetter morgen
+                    </h3>   
+               </div>
                 <div class="flex">
                     <div class="wetter">
-                        <div class="flex" style="margin-top: 30px;">
+                        <div class="flex">
                             <div>
-                                <div>
-                                    <img alt="" id="allgemein">
-                                </div>
-                                <h6 id="wetterart"></h6>  
+                                <img alt="" id="allgemein">
                             </div>
-                            <div>
-                                <div class="flex">
-                                    <img src="./Wetter/grad.png" alt="" class="bilder">
-                                    <h4 id="temp" class="wetterdaten"></h4>
-                                </div>
-                                <div class="flex">
-                                    <img src="./Wetter/niederschlag.png" alt="" class="bilder">
-                                    <p id="nieder" class="wetterdaten"></p>
-                                </div>
-                                <div class="flex">
-                                    <img src="./Wetter/wind.png" alt="" class="bilder">
-                                    <p id="wind" class="wetterdaten"></p>
-                                </div>
+                            <h5 id="wetterart"></h5>  
+                        </div>
+                        <div class="hintergrund">
+                            <div class="zentriert">
+                                <img src="./Wetter/grad.png" alt="" class="bilder">
+                                <h6 id="temp" class="wetterdaten"></h6>
+                            </div>
+                            <div class="zentriert">
+                                <img src="./Wetter/niederschlag.png" alt="" class="bilder">
+                                <h6 id="nieder" class="wetterdaten"></h6>
+                            </div>
+                            <div class="zentriert">
+                                <img src="./Wetter/wind.png" alt="" class="bilder">
+                                <h6 id="wind" class="wetterdaten"></h6>
                             </div>
                         </div>
                     </div>
+
                     <div class="wetterMg">
-                        <div class="flex" style="margin-top: 30px;">
+                        <div class="flex">
                             <div>
-                                <div>
-                                    <img alt="" id="allgemein1">
-                                </div>
-                                <h6 id="wetterart1"></h6>  
+                                <img alt="" id="allgemeinMg">
                             </div>
-                            <div>
-                                <div class="flex">
-                                    <img src="./Wetter/grad.png" alt="" class="bilder">
-                                    <h4 id="temp1" class="wetterdaten"></h4>
-                                </div>
-                                <div class="flex">
-                                    <img src="./Wetter/niederschlag.png" alt="" class="bilder">
-                                    <p id="nieder1" class="wetterdaten"></p>
-                                </div>
-                                <div class="flex">
-                                    <img src="./Wetter/wind.png" alt="" class="bilder">
-                                    <p id="wind1" class="wetterdaten"></p>
-                                </div>
+                            <h5 id="wetterartMg"></h5>  
+                        </div>
+                        <div class="hintergrund">
+                            <div class="zentriert" >
+                                <img src="./Wetter/grad.png" alt="" class="bilder">
+                                <h6 id="tempMg" class="wetterdaten"></h6>
+                            </div>
+                            <div class="zentriert">
+                                <img src="./Wetter/niederschlag.png" alt="" class="bilder">
+                                <h6 id="niederMg" class="wetterdaten"></h6>
+                            </div>
+                            <div class="zentriert">
+                                <img src="./Wetter/wind.png" alt="" class="bilder">
+                                <h6 id="windMg" class="wetterdaten"></h6>
                             </div>
                         </div>
                     </div>
