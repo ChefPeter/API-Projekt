@@ -174,7 +174,7 @@ function fahrplan(data){
     //einlesenXml(document);
 }
 
-function display_ct7(){ //Findet die derzeitige Uhrzeit und das Aktuelle Datum
+function display_ct7(){ //Findet die derzeitige Uhrzeit und das aktuelle Datum
     var x = new Date()
     var ampm = x.getHours( ) >= 12 ? '' : '';
     hours = x.getHours();
@@ -187,12 +187,11 @@ function display_ct7(){ //Findet die derzeitige Uhrzeit und das Aktuelle Datum
     month = month.length == 1 ? 0+month : month;
     var dt = x.getDate().toString();
     dt = dt.length == 1 ? 0+dt : dt;
-    var x1= dt + "/" + month + "/" + x.getFullYear(); 
+    var x1 = dt + "/" + month + "/" + x.getFullYear(); 
     x1 = x1 + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
     document.getElementById('zeit').innerHTML = x1;
     display_c7();
 
-    //console.log(x.getSeconds());
     if (x.getSeconds()==0) einlesenFahrplan();
 }
 
