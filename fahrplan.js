@@ -1,6 +1,9 @@
+// Für den Informationstext
+let zaehlVariable = -1;
 let textVariable = 0;
 let tagObj;
 
+// Ruft die Funktion display_ct7() alle Sekunden auf
 function display_c7(){
     var refresh=1000; // Refresh rate in milli seconds
     mytime=setTimeout('display_ct7()',refresh);
@@ -10,16 +13,31 @@ function display_c7(){
     mytime = setTimeout('einlesenFahrplan()', 10000);
 } */
 
+// Ruft die Funktion einlesenWetter() alle 2 min auf
 function aufrufWetter(){
-    mytime = setTimeout('einlesenWetter()', 150000);
+    mytime = setTimeout('einlesenWetter()', 120000);
 }
 
+// Ruft die Funktion einlesenTemperatur() alle 50 sec auf
 function aufrufTemp(){
     mytime = setTimeout('einlesenTemperatur()', 50000);
 }
 
+// Ruft die Funktion erneuereText() alle 20 sec auf
 function aufrufText(){
-    mytime = setTimeout('erneuereText()', 5000);
+    //console.log(zaehlVariable);
+
+    if (zaehlVariable == -1){
+        zaehlVariable = 1;
+        erneuereText();
+    }
+    else if (zaehlVariable%10 == 0){
+        zaehlVariable = 1;
+        einlesenXml();
+        
+    }
+    else mytime = setTimeout('erneuereText()', 20000);
+    zaehlVariable++;
 }
 
 // Liest das JSON-File des Fahplans ein und übergibt es der Funktion aufrufFahrplan()
@@ -133,8 +151,6 @@ function fahrplan(data){
         // Linienname und Nummer ausgeben
         document.getElementById(linieId).innerHTML = data.departureList[i].servingLine.number;
         document.getElementById(zielId).innerHTML = data.departureList[i].servingLine.direction;
-
-        console.log(data.departureList[i].servingLine.liErgRiProj.direction)
         
         // Richtung herausfinden
         if (data.departureList[i].x == "702534") document.getElementById(richtungId).innerHTML = "Nord";
@@ -154,7 +170,6 @@ function fahrplan(data){
         else document.getElementById(countdown).innerHTML = "in " + stunde + " h und " + minu + " min";
     }
 
-    let brixen = data.rows.filter(e => e.name == "Brixen - Vahrn")[0];
     //aufrufFahrplan();
     //einlesenXml(document);
 }
@@ -198,7 +213,7 @@ function einlesenXml(){
     tagObj=xmlDoc.getElementsByTagName("infoLink");
     document.getElementById("informationstext").innerHTML = "";
     
-    erneuereText();
+    aufrufText();
 }
 
 function erneuereText(){
