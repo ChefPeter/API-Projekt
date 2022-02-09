@@ -49,7 +49,8 @@ function einlesenTemperatur(){
 }
 
 function einlesenWetter(){
-    fetch("https://api.openweathermap.org/data/2.5/weather?lat=46.717996&lon=11.651795&appid=0556bd130943fa16cb0b4a5c3b3f9931&mode=json&units=metric&lang=de")
+
+    fetch("https://api.openweathermap.org/data/2.5/forecast?id=6535887&appid=dc704448494ba8187b5e3cf65aafac7f&cnt=40&units=metric&lang=de")
         .then(response => {
             if (response.ok) {
                 return response.json();
@@ -69,15 +70,25 @@ function temperatur(data){
     });
 
     document.getElementById("temp").innerHTML = "&nbsp;" + brixen.t + "°C";
-    document.getElementById("tempMg").innerHTML = "&nbsp;" + brixen.t + "°C";
 
     aufrufWetter();
 }
 
-function wetter(data){
+function wetter(jsonData){ 
+
+    var tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate()+1);
+    const string = tomorrow.toISOString().split('T')[0] + " 12:00:00";
+    let data = jsonData.list[0];
+    let dataMg = jsonData.list.find(e => e.dt_txt == string);
+    
 
     let bild = "./Wetter/" + data.weather[0].icon + ".png";
     let hintergrund = "url(./Wetter/" + "h" + data.weather[0].icon + ".png)";
+
+
+    let bildMg = "./Wetter/" + dataMg.weather[0].icon + ".png";
+    let hintergrundMg = "url(./Wetter/" + "h" + dataMg.weather[0].icon + ".png)";
 
     document.getElementById("allgemein").src = bild;
     document.getElementsByClassName("wetter")[0].style.backgroundImage = hintergrund;
@@ -86,12 +97,14 @@ function wetter(data){
     document.getElementById("wind").innerHTML = "&nbsp;" + data.wind.speed + "m/s";
     document.getElementById("wetterart").innerHTML = data.weather[0].description;
 
-    document.getElementById("allgemeinMg").src = bild;
-    document.getElementsByClassName("wetterMg")[0].style.backgroundImage = hintergrund;
+    document.getElementById("allgemeinMg").src = bildMg;
+    document.getElementsByClassName("wetterMg")[0].style.backgroundImage = hintergrundMg;
     
-    document.getElementById("niederMg").innerHTML = "&nbsp;" + data.main.humidity + "% Luftfeuchtigkeit";
-    document.getElementById("windMg").innerHTML = "&nbsp;" + data.wind.speed + "m/s";
-    document.getElementById("wetterartMg").innerHTML = data.weather[0].description;
+    document.getElementById("niederMg").innerHTML = "&nbsp;" + dataMg.main.humidity + "% Luftfeuchtigkeit";
+    document.getElementById("windMg").innerHTML = "&nbsp;" + dataMg.wind.speed + "m/s";
+    document.getElementById("wetterartMg").innerHTML = dataMg.weather[0].description;
+
+    document.getElementById("tempMg").innerHTML = "&nbsp;" + dataMg.main.temp + "°C";
 
     aufrufWetter();
 }
