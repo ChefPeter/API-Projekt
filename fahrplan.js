@@ -99,7 +99,6 @@ function wetter(jsonData){
     const string = tomorrow.toISOString().split('T')[0] + " 12:00:00";
     let data = jsonData.list[0];
     let dataMg = jsonData.list.find(e => e.dt_txt == string);
-    
 
     let bild = "./Wetter/" + data.weather[0].icon + ".png";
     let hintergrund = "url(./Wetter/" + "h" + data.weather[0].icon + ".png)";
@@ -123,6 +122,18 @@ function wetter(jsonData){
     document.getElementById("wetterartMg").innerHTML = dataMg.weather[0].description;
 
     document.getElementById("tempMg").innerHTML = "&nbsp;" + dataMg.main.temp + "°C";
+
+    let minTemp = 100.00;
+    let maxTemp =-100.00;
+    
+    for (let i=0; i<17; i++){
+        if (jsonData.list[i].dt_txt[9] == string[9]){
+            if (jsonData.list[i].main.temp_min < minTemp) minTemp = jsonData.list[i].main.temp_min;
+            if (jsonData.list[i].main.temp_max > maxTemp) maxTemp = jsonData.list[i].main.temp_max;
+        }
+        
+    }
+    console.log(minTemp + ", " + maxTemp);
 
     aufrufWetter();
 }
