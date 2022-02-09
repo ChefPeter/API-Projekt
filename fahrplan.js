@@ -5,28 +5,22 @@ let tagObj;
 
 // Ruft die Funktion display_ct7() alle Sekunden auf
 function display_c7(){
-    var refresh=1000; // Refresh rate in milli seconds
+    var refresh=1000; // Refresh rate in milli sekunden
     mytime=setTimeout('display_ct7()',refresh);
 }
 
-/* function aufrufFahrplan(){
-    mytime = setTimeout('einlesenFahrplan()', 10000);
-} */
-
-// Ruft die Funktion einlesenWetter() alle 2 min auf
+// Ruft die Funktion einlesenWetter() alle 12 min auf
 function aufrufWetter(){
     mytime = setTimeout('einlesenWetter()', 120000);
 }
 
-// Ruft die Funktion einlesenTemperatur() alle 50 sec auf
+// Ruft die Funktion einlesenTemperatur() alle 5 min auf
 function aufrufTemp(){
     mytime = setTimeout('einlesenTemperatur()', 50000);
 }
 
 // Ruft die Funktion erneuereText() alle 15 sec auf
 function aufrufText(){
-    //console.log(zaehlVariable);
-
     if (zaehlVariable == -1){
         zaehlVariable = 1;
         erneuereText();
@@ -48,12 +42,12 @@ function einlesenFahrplan(){
                 return response.json();
             } else {
                 aufrufFahrplan();
-                //throw new Error('Something went wrong');
             }
         })
         .then(json => fahrplan(json));
 }
 
+//Liest JASON-File von Opden Data Südtirol ein für die aktuelle Temperatur
 function einlesenTemperatur(){
     fetch("http://daten.buergernetz.bz.it/services/weather/station?categoryId=1&lang=de&format=json")
     .then(response => {
@@ -66,8 +60,8 @@ function einlesenTemperatur(){
     .then(json => temperatur(json));
 }
 
+//Liest das JASON-File von Open Wather ein für alle Wetterinformationen und Wettervorhersagen bis auf Temperatur
 function einlesenWetter(){
-
     fetch("https://api.openweathermap.org/data/2.5/forecast?id=6535887&appid=dc704448494ba8187b5e3cf65aafac7f&cnt=40&units=metric&lang=de")
         .then(response => {
             if (response.ok) {
@@ -79,9 +73,10 @@ function einlesenWetter(){
         .then(json => wetter(json));
 }
 
+//Aktuelle Temperatur wird von JASON-File ausgelesen und in das HTML dokument geschrieben
 function temperatur(data){
     let brixen;
-
+    //Von Jason File wird nur der Teil von Brixen herausgesucht
     data.rows.map((e) => {
         if(e["name"] === "Brixen - Vahrn")
             brixen = e;
@@ -92,8 +87,9 @@ function temperatur(data){
     aufrufWetter();
 }
 
+//Liest alle Wetterdeteils bis auf temperatur vom JASON FILE aus und schreibt diese in das HTML Dokument
 function wetter(jsonData){ 
-
+    
     var tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate()+1);
     const string = tomorrow.toISOString().split('T')[0] + " 12:00:00";
@@ -202,7 +198,8 @@ function fahrplan(data){
         minu = minu - (stunde * 60);
 
         // Countdown ausgeben
-        if (stunde == 0) document.getElementById(countdown).innerHTML = "in " + minu + " min";
+        if (stunde == 0 && minu == 0) document.getElementById(countdown).innerHTML = "jetzt";
+        else if (stunde == 0) document.getElementById(countdown).innerHTML = "in " + minu + " min";
         else document.getElementById(countdown).innerHTML = "in " + stunde + " h und " + minu + " min";
     }
 
@@ -210,7 +207,8 @@ function fahrplan(data){
     //einlesenXml(document);
 }
 
-function display_ct7(){ //Findet die derzeitige Uhrzeit und das Aktuelle Datum
+//Findet die derzeitige Uhrzeit und das aktuelle Datum in gewohnten Format
+function display_ct7(){ 
     var x = new Date()
     var ampm = x.getHours( ) >= 12 ? '' : '';
     hours = x.getHours();
@@ -223,12 +221,11 @@ function display_ct7(){ //Findet die derzeitige Uhrzeit und das Aktuelle Datum
     month = month.length == 1 ? 0+month : month;
     var dt = x.getDate().toString();
     dt = dt.length == 1 ? 0+dt : dt;
-    var x1= dt + "/" + month + "/" + x.getFullYear(); 
+    var x1 = dt + "/" + month + "/" + x.getFullYear(); 
     x1 = x1 + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
     document.getElementById('zeit').innerHTML = x1;
     display_c7();
 
-    //console.log(x.getSeconds());
     if (x.getSeconds()==0) einlesenFahrplan();
 }
 
@@ -243,7 +240,6 @@ function einlesenXml(){
         }
         xmlhttp.send();
         xmlDoc=xmlhttp.responseXML;
-        //console.log(xmlDoc);
     }
 
     tagObj=xmlDoc.getElementsByTagName("infoLink");
@@ -263,6 +259,7 @@ function erneuereText(){
     aufrufText();
 }
 
+//Hier werden alle benötigten Funktionen aufgerufen
 einlesenXml();
 einlesenWetter();
 einlesenFahrplan();
