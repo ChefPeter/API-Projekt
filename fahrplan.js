@@ -22,6 +22,7 @@ function aufrufText(){
     mytime = setTimeout('erneuereText()', 5000);
 }
 
+// Liest das JSON-File des Fahplans ein und übergibt es der Funktion aufrufFahrplan()
 function einlesenFahrplan(){
     fetch("https://efa.sta.bz.it/apb/XML_DM_REQUEST?&locationServerActive=1&stateless=1&type_dm=any&name_dm=Brixen%20Brixen%20Dantestra%C3%9Fe&mode=direct&outputFormat=json")
         .then(response => {
@@ -95,6 +96,7 @@ function wetter(data){
     aufrufWetter();
 }
 
+// Berechnet und gibt den Fahrplan aus
 function fahrplan(data){
 
     let linieId = "";
@@ -106,7 +108,7 @@ function fahrplan(data){
     let stunde = 0;
 
     for(let i=0; i<14; i++){
-        //console.log(data.departureList[i].servingLine.direction);
+        // Den Linien IDs zuweisen
         linieId = "linie" + i;
         zielId = "ziel" + i;
         abfahrtId = "abfahrt" + i;
@@ -115,24 +117,26 @@ function fahrplan(data){
         stunde = data.departureList[i].dateTime.hour;
         minu = data.departureList[i].dateTime.minute;
         
-
+        // Linienname und Nummer ausgeben
         document.getElementById(linieId).innerHTML = data.departureList[i].servingLine.number;
         document.getElementById(zielId).innerHTML = data.departureList[i].servingLine.direction;
 
         console.log(data.departureList[i].servingLine.liErgRiProj.direction)
         
-        if (data.departureList[i].servingLine.liErgRiProj.direction == "R")
-            document.getElementById(richtungId).innerHTML = "Süd";
-        else if (data.departureList[i].servingLine.liErgRiProj.direction == "H")
-            document.getElementById(richtungId).innerHTML = "Nord";
+        // Richtung herausfinden
+        if (data.departureList[i].x == "702534") document.getElementById(richtungId).innerHTML = "Nord";
+        else if (data.departureList[i].x == "702523") document.getElementById(richtungId).innerHTML = "Süd";
         
+        // Abfahrtszeit ausgeben
         if (minu<10) document.getElementById(abfahrtId).innerHTML = stunde + ":0" + minu;
         else document.getElementById(abfahrtId).innerHTML = stunde + ":" + minu;
 
+        // Countdown berechnen
         minu = data.departureList[i].countdown;
         stunde = Math.floor(minu/60);
         minu = minu - (stunde * 60);
 
+        // Countdown ausgeben
         if (stunde == 0) document.getElementById(countdown).innerHTML = "in " + minu + " min";
         else document.getElementById(countdown).innerHTML = "in " + stunde + " h und " + minu + " min";
     }
