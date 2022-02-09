@@ -4,6 +4,10 @@
     font-family: Arial; 
 }
 
+#fahrplan{
+    margin: 2%;
+}
+
 #datum{
     display: flex;
     justify-content: right;
@@ -31,10 +35,6 @@
 
 #informationstext{
     margin-top: 30px;
-}
-
-#fahrplan{
-    margin: 2%;
 }
 
 #tabelle{
