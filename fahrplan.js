@@ -31,7 +31,7 @@ function aufrufText(){
         zaehlVariable = 1;
         erneuereText();
     }
-    else if (zaehlVariable%10 == 0){
+    else if (zaehlVariable%3600 == 0){
         zaehlVariable = 1;
         einlesenXml();
         
@@ -211,7 +211,6 @@ function einlesenXml(){
     }
 
     tagObj=xmlDoc.getElementsByTagName("infoLink");
-    document.getElementById("informationstext").innerHTML = "";
     
     aufrufText();
 }
