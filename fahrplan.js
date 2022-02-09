@@ -68,6 +68,7 @@ function temperatur(data){
     });
 
     document.getElementById("temp").innerHTML = "&nbsp;" + brixen.t + "°C";
+    document.getElementById("tempMg").innerHTML = "&nbsp;" + brixen.t + "°C";
 
     aufrufWetter();
 }
