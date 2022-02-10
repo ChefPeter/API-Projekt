@@ -87,7 +87,7 @@ function temperatur(data){
     aufrufWetter();
 }
 
-//Liest alle Wetterdeteils bis auf temperatur vom JASON FILE aus und schreibt diese in das HTML Dokument
+//Liest alle Wetterdetails bis auf temperatur vom JASON FILE aus und schreibt diese in das HTML Dokument
 function wetter(jsonData){ 
     
     var tomorrow = new Date();
