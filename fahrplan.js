@@ -110,6 +110,7 @@ function wetter(jsonData){
     let maxTemp =-100.00;
     let windGesch = 0.00;
     let bilder = [];
+    let beschriftungen = {};
 
     
     for (let i=0; i<16; i++){
@@ -118,6 +119,7 @@ function wetter(jsonData){
             if (jsonData.list[i].main.temp_max > maxTemp) maxTemp = jsonData.list[i].main.temp_max;
             windGesch += jsonData.list[i].wind.speed;
             bilder.push(jsonData.list[i].weather[0].icon);
+            beschriftungen[jsonData.list[i].weather[0].icon] = jsonData.list[i].weather[0].description;
         } 
     }
 
@@ -151,7 +153,7 @@ function wetter(jsonData){
 
     document.getElementById("allgemeinMg").src = bildMg;
     document.getElementsByClassName("wetterMg")[0].style.backgroundImage = hintergrundMg;
-    document.getElementById("wetterartMg").innerHTML = "";
+    document.getElementById("wetterartMg").innerHTML = beschriftungen[bild1];
     document.getElementById("windMg").innerHTML = "&nbsp;" + windGesch + "m/s";
     
 
