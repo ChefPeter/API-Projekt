@@ -112,6 +112,8 @@
     overflow-x: hidden;
     overflow-y: hidden;
     min-height: fit-content;
+    background-color: rgb(242, 242, 242);
+    
 }
 
 .bilder{
