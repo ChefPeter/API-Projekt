@@ -111,7 +111,7 @@ function wetter(jsonData){
     let windGesch = 0.00;
     let bilder = [];
 
-    
+    //Es werden die durchschnittlichen temperaturen und windgeschwindigkeiten für den nächsten Tag herausgefunden
     for (let i=0; i<16; i++){
         if (jsonData.list[i].dt_txt[9] == string[9]){
             if (jsonData.list[i].main.temp_min < minTemp) minTemp = jsonData.list[i].main.temp_min;
@@ -143,6 +143,7 @@ function wetter(jsonData){
         vorheriges = bilder[i];
     }
 
+    //Daten für das Wetter von morgen werden in das HTML-Dokument geschrieben
     document.getElementById("tempMg").innerHTML = "&nbsp;" + "Min: " + minTemp + "°C";
     document.getElementById("niederMg").innerHTML = "&nbsp;" + "Max: " + maxTemp + "°C";
 
@@ -202,8 +203,6 @@ function fahrplan(data){
         else document.getElementById(countdown).innerHTML = "in " + stunde + " h und " + minu + " min";
     }
 
-    //aufrufFahrplan();
-    //einlesenXml(document);
 }
 
 //Findet die derzeitige Uhrzeit und das aktuelle Datum in gewohnten Format
@@ -228,8 +227,8 @@ function display_ct7(){
     if (x.getSeconds()==0) einlesenFahrplan();
 }
 
+//XML-Dokument, welches die Aktuellen Meldungen enthält wird ausgelesen
 function einlesenXml(){
-
     var xmlDoc;
     if(typeof window.DOMParser != "undefined") {
         xmlhttp=new XMLHttpRequest();
