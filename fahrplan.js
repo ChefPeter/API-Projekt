@@ -87,7 +87,7 @@ function temperatur(data){
     aufrufWetter();
 }
 
-//Liest alle Wetterdeteils bis auf temperatur vom JASON FILE aus und schreibt diese in das HTML Dokument
+//Liest alle Wetterdetails bis auf temperatur vom JASON FILE aus und schreibt diese in das HTML Dokument
 function wetter(jsonData){ 
     
     var tomorrow = new Date();
@@ -251,6 +251,10 @@ function erneuereText(){
     document.getElementById("informationstext").innerHTML = "";
     document.getElementById("informationstext").innerHTML += "<h4 style=\"font-weight: bold;\">" + tagObj[textVariable].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue + "</h4>";
     document.getElementById("informationstext").innerHTML += tagObj[textVariable].getElementsByTagName("content")[0].childNodes[0].nodeValue.replace(/<p>&nbsp;<\/p>/g, "");
+
+    for (let i = 0; i < 30; i++) {
+        document.getElementById("informationstext").innerHTML += "<br>";
+    }
 
     textVariable++;
 
