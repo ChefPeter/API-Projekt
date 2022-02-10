@@ -99,10 +99,6 @@ function wetter(jsonData){
     let bild = "./Wetter/" + data.weather[0].icon + ".png";
     let hintergrund = "url(./Wetter/" + "h" + data.weather[0].icon + ".png)";
 
-
-    let bildMg = "./Wetter/" + dataMg.weather[0].icon + ".png";
-    let hintergrundMg = "url(./Wetter/" + "h" + dataMg.weather[0].icon + ".png)";
-
     document.getElementById("allgemein").src = bild;
     document.getElementsByClassName("wetter")[0].style.backgroundImage = hintergrund;
     
@@ -110,14 +106,7 @@ function wetter(jsonData){
     document.getElementById("wind").innerHTML = "&nbsp;" + data.wind.speed + "m/s";
     document.getElementById("wetterart").innerHTML = data.weather[0].description;
 
-    document.getElementById("allgemeinMg").src = bildMg;
-    document.getElementsByClassName("wetterMg")[0].style.backgroundImage = hintergrundMg;
-    
-    document.getElementById("niederMg").innerHTML = "&nbsp;" + dataMg.main.humidity + "% Luftfeuchtigkeit";
     document.getElementById("windMg").innerHTML = "&nbsp;" + dataMg.wind.speed + "m/s";
-    document.getElementById("wetterartMg").innerHTML = dataMg.weather[0].description;
-
-    document.getElementById("tempMg").innerHTML = "&nbsp;" + dataMg.main.temp + "°C";
 
     let minTemp = 100.00;
     let maxTemp =-100.00;
@@ -151,10 +140,16 @@ function wetter(jsonData){
         vorheriges = bilder[i];
     }
 
-    console.log(bilder);
-    console.log(bild1 + ", Häufigkeit: " + hoechstes);
+    document.getElementById("tempMg").innerHTML = "&nbsp;" + "Min: " + minTemp + "°C";
+    document.getElementById("niederMg").innerHTML = "&nbsp;" + "Max: " + maxTemp + "°C";
 
-    console.log(minTemp + ", " + maxTemp);
+    let bildMg = "./Wetter/" + bild1 + ".png";
+    let hintergrundMg = "url(./Wetter/" + "h" + bild1 + ".png)";
+
+    document.getElementById("allgemeinMg").src = bildMg;
+    document.getElementsByClassName("wetterMg")[0].style.backgroundImage = hintergrundMg;
+    document.getElementById("wetterartMg").innerHTML = "";
+    
 
     aufrufWetter();
 }
