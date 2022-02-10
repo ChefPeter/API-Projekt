@@ -191,7 +191,9 @@ function fahrplan(data){
         else if (data.departureList[i].x == "702523") document.getElementById(richtungId).innerHTML = "Süd";
         
         // Abfahrtszeit ausgeben
-        if (minu<10) document.getElementById(abfahrtId).innerHTML = stunde + ":0" + minu;
+        if (minu<10 && stunde<10) document.getElementById(abfahrtId).innerHTML = "0" + stunde + ":0" + minu;
+        else if (minu<10) document.getElementById(abfahrtId).innerHTML = stunde + ":0" + minu;
+        else if (stunde<10) document.getElementById(abfahrtId).innerHTML = "0" + stunde + ":" + minu;
         else document.getElementById(abfahrtId).innerHTML = stunde + ":" + minu;
 
         // Countdown berechnen
