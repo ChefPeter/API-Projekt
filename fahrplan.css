@@ -126,6 +126,8 @@
 
 .wetterAlgemein{
     margin-left: 3%;
+    min-width: 45.5%;
+    max-height: 45.5%;
 }
 
 .wetterMg{
