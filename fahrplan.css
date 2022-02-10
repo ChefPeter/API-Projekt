@@ -92,7 +92,7 @@
 }
 
 .hintergrund{
-    background-image: url("./Wetter/hintergrund.png");
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
     border-radius: 18px;
     padding: 10px;
     margin-top: 10px;
