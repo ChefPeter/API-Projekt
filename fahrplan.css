@@ -33,9 +33,6 @@
     align-items: center;
 }
 
-#informationstext{
-    margin-top: 3%;
-}
 
 #tabelle{
     display: flex;
@@ -103,7 +100,7 @@
     font-weight: bold;
 }
 
-.rand{
+#informationstext{
     border: 3px solid black; 
     border-color: rgb(13, 122, 172);
     border-radius: 18px;
@@ -113,7 +110,7 @@
     overflow-y: hidden;
     min-height: fit-content;
     background-color: rgb(242, 242, 242);
-    
+    margin-top: 3%;
 }
 
 .bilder{
@@ -147,5 +144,3 @@
     display: flex;
     justify-content: center;
 }
-
-

@@ -252,6 +252,10 @@ function erneuereText(){
     document.getElementById("informationstext").innerHTML += "<h4 style=\"font-weight: bold;\">" + tagObj[textVariable].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue + "</h4>";
     document.getElementById("informationstext").innerHTML += tagObj[textVariable].getElementsByTagName("content")[0].childNodes[0].nodeValue.replace(/<p>&nbsp;<\/p>/g, "");
 
+    for (let i = 0; i < 30; i++) {
+        document.getElementById("informationstext").innerHTML += "<br>";
+    }
+
     textVariable++;
 
     if (tagObj.length == textVariable) textVariable=0;
