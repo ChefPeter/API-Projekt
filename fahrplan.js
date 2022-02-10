@@ -223,9 +223,10 @@ function display_ct7(){
     month = month.length == 1 ? 0+month : month;
     var dt = x.getDate().toString();
     dt = dt.length == 1 ? 0+dt : dt;
-    var x1 = dt + "/" + month + "/" + x.getFullYear(); 
-    x1 = x1 + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
-    document.getElementById('zeit').innerHTML = x1;
+    var x1 = dt + "." + month + "." + x.getFullYear(); 
+    //x1 = x1 + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
+    document.getElementById("aktZeit").innerHTML = hours + ":" +  minutes + ":" +  seconds + " " + ampm;
+    document.getElementById("aktDatum").innerHTML = x1;
     display_c7();
 
     if (x.getSeconds()==0) einlesenFahrplan();

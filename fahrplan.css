@@ -13,7 +13,6 @@
 #datum{
     display: flex;
     justify-content: right;
-    font-size: large; 
     font-weight: 550;
     min-width: 35%;
 }
@@ -164,4 +163,20 @@
     background-color: rgb(97, 149, 184);
     border-radius: 5px;
     color: white;
+}
+
+#zeit{
+    background-color: rgb(242, 242, 242);
+    justify-content: right;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    border-color: rgb(13, 122, 172);
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height:0%;
+}
+
+.countdowns{
+    font-weight: lighter;
 }
