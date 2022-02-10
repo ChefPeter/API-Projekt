@@ -212,7 +212,7 @@ function fahrplan(data){
 //Findet die derzeitige Uhrzeit und das aktuelle Datum in gewohnten Format
 function display_ct7(){ 
     var x = new Date()
-    var ampm = x.getHours( ) >= 12 ? '' : '';
+    //var ampm = x.getHours( ) >= 12 ? '' : '';
     hours = x.getHours();
     hours = hours.toString().length==1? 0+hours.toString() : hours;
     var minutes = x.getMinutes().toString()
@@ -225,7 +225,7 @@ function display_ct7(){
     dt = dt.length == 1 ? 0+dt : dt;
     var x1 = dt + "." + month + "." + x.getFullYear(); 
     //x1 = x1 + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
-    document.getElementById("aktZeit").innerHTML = hours + ":" +  minutes + ":" +  seconds + " " + ampm;
+    document.getElementById("aktZeit").innerHTML = hours + ":" +  minutes + ":" +  seconds;
     document.getElementById("aktDatum").innerHTML = x1;
     display_c7();
 
