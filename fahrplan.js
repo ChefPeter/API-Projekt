@@ -1,39 +1,37 @@
-// Für den Informationstext
-let zaehlVariable = -1;
-let textVariable = 0;
-let tagObj;
-
-// Ruft die Funktion display_ct7() alle Sekunden auf
-function display_c7(){
+// Uhrzeit
+// Ruft die Funktion uhrzeit() alle Sekunden auf
+function aufrufUhrzeit(){
     var refresh=1000; // Refresh rate in milli sekunden
-    mytime=setTimeout('display_ct7()',refresh);
+    mytime=setTimeout('uhrzeit()',refresh);
 }
 
-// Ruft die Funktion einlesenWetter() alle 12 min auf
-function aufrufWetter(){
-    mytime = setTimeout('einlesenWetter()', 120000);
+//Findet die derzeitige Uhrzeit und das aktuelle Datum in gewohnten Format
+function uhrzeit(){
+
+    var x = new Date();
+    var hours = x.getHours();
+    var minutes = x.getMinutes().toString();
+    var seconds = x.getSeconds().toString();
+    var month = (x.getMonth() +1).toString();
+    var dt = x.getDate().toString();
+    var datum = "";
+    
+    hours = hours.toString().length==1? 0+hours.toString() : hours;
+    minutes = minutes.length == 1 ? 0+minutes : minutes;
+    seconds = seconds.length == 1 ? 0+seconds : seconds;
+    month = month.length == 1 ? 0+month : month;
+    dt = dt.length == 1 ? 0+dt : dt;
+    datum = dt + "." + month + "." + x.getFullYear(); 
+
+    document.getElementById("aktZeit").innerHTML = hours + ":" +  minutes + ":" +  seconds;
+    document.getElementById("aktDatum").innerHTML = datum;
+    aufrufUhrzeit();
+
+    if (x.getSeconds()==0) einlesenFahrplan();
 }
 
-// Ruft die Funktion einlesenTemperatur() alle 5 min auf
-function aufrufTemp(){
-    mytime = setTimeout('einlesenTemperatur()', 50000);
-}
 
-// Ruft die Funktion erneuereText() alle 15 sec auf
-function aufrufText(){
-    if (zaehlVariable == -1){
-        zaehlVariable = 1;
-        erneuereText();
-    }
-    else if (zaehlVariable%240 == 0){
-        zaehlVariable = 1;
-        einlesenXml();
-        
-    }
-    else mytime = setTimeout('erneuereText()', 15000);
-    zaehlVariable++;
-}
-
+// Fahrplan Tabelle
 // Liest das JSON-File des Fahplans ein und übergibt es der Funktion aufrufFahrplan()
 function einlesenFahrplan(){
     fetch("https://efa.sta.bz.it/apb/XML_DM_REQUEST?&locationServerActive=1&stateless=1&type_dm=any&name_dm=Brixen%20Brixen%20Dantestra%C3%9Fe&mode=direct&outputFormat=json")
@@ -45,6 +43,65 @@ function einlesenFahrplan(){
             }
         })
         .then(json => fahrplan(json));
+}
+
+// Berechnet und gibt den Fahrplan aus
+function fahrplan(data){
+
+    let linieId = "";
+    let zielId = "";
+    let abfahrtId = "";
+    let countdown = "";
+    let richtungId = "";
+    let minu = 0;
+    let stunde = 0;
+
+    for(let i=0; i<14; i++){
+        // Den Linien IDs zuweisen
+        linieId = "linie" + i;
+        zielId = "ziel" + i;
+        abfahrtId = "abfahrt" + i;
+        richtungId = "richtung" + i;
+        countdown = "countdown" + i;
+        stunde = data.departureList[i].dateTime.hour;
+        minu = data.departureList[i].dateTime.minute;
+        
+        // Linienname und Nummer ausgeben
+        document.getElementById(linieId).innerHTML = data.departureList[i].servingLine.number;
+        document.getElementById(zielId).innerHTML = data.departureList[i].servingLine.direction;
+        
+        // Richtung herausfinden
+        if (data.departureList[i].x == "702534") document.getElementById(richtungId).innerHTML = "Nord";
+        else if (data.departureList[i].x == "702523") document.getElementById(richtungId).innerHTML = "Süd";
+        
+        // Abfahrtszeit ausgeben
+        if (minu<10 && stunde<10) document.getElementById(abfahrtId).innerHTML = "0" + stunde + ":0" + minu;
+        else if (minu<10) document.getElementById(abfahrtId).innerHTML = stunde + ":0" + minu;
+        else if (stunde<10) document.getElementById(abfahrtId).innerHTML = "0" + stunde + ":" + minu;
+        else document.getElementById(abfahrtId).innerHTML = stunde + ":" + minu;
+
+        // Countdown berechnen
+        minu = data.departureList[i].countdown;
+        stunde = Math.floor(minu/60);
+        minu = minu - (stunde * 60);
+
+        // Countdown ausgeben
+        if (stunde == 0 && minu == 0) document.getElementById(countdown).innerHTML = "jetzt";
+        else if (stunde == 0) document.getElementById(countdown).innerHTML = "in " + minu + " min";
+        else document.getElementById(countdown).innerHTML = "in " + stunde + " h und " + minu + " min";
+    }
+}
+
+
+// Wetter und Temperatur
+// Ruft die Funktion einlesenWetter() alle 5 min auf
+function aufrufWetter(){
+    mytime = setTimeout('einlesenWetter()', 300000);
+}
+
+// Ruft die Funktion einlesenTemperatur() alle 5 min auf
+function aufrufTemp(){
+    mytime = setTimeout('einlesenTemperatur()', 300000);
 }
 
 //Liest JASON-File von Opden Data Südtirol ein für die aktuelle Temperatur
@@ -157,90 +214,37 @@ function wetter(jsonData){
     document.getElementById("wetterartMg").innerHTML = beschriftungen[bild1];
     document.getElementById("windMg").innerHTML = "&nbsp;" + windGesch + "m/s";
     
-
     aufrufWetter();
 }
 
-// Berechnet und gibt den Fahrplan aus
-function fahrplan(data){
 
-    let linieId = "";
-    let zielId = "";
-    let abfahrtId = "";
-    let countdown = "";
-    let richtungId = "";
-    let minu = 0;
-    let stunde = 0;
+// Informationstext
+// Variablen für Informationstext
+let zaehlVariable = -1;
+let textVariable = 0;
+let tagObj;
 
-    for(let i=0; i<14; i++){
-        // Den Linien IDs zuweisen
-        linieId = "linie" + i;
-        zielId = "ziel" + i;
-        abfahrtId = "abfahrt" + i;
-        richtungId = "richtung" + i;
-        countdown = "countdown" + i;
-        stunde = data.departureList[i].dateTime.hour;
-        minu = data.departureList[i].dateTime.minute;
-        
-        // Linienname und Nummer ausgeben
-        document.getElementById(linieId).innerHTML = data.departureList[i].servingLine.number;
-        document.getElementById(zielId).innerHTML = data.departureList[i].servingLine.direction;
-        
-        // Richtung herausfinden
-        if (data.departureList[i].x == "702534") document.getElementById(richtungId).innerHTML = "Nord";
-        else if (data.departureList[i].x == "702523") document.getElementById(richtungId).innerHTML = "Süd";
-        
-        // Abfahrtszeit ausgeben
-        if (minu<10 && stunde<10) document.getElementById(abfahrtId).innerHTML = "0" + stunde + ":0" + minu;
-        else if (minu<10) document.getElementById(abfahrtId).innerHTML = stunde + ":0" + minu;
-        else if (stunde<10) document.getElementById(abfahrtId).innerHTML = "0" + stunde + ":" + minu;
-        else document.getElementById(abfahrtId).innerHTML = stunde + ":" + minu;
-
-        // Countdown berechnen
-        minu = data.departureList[i].countdown;
-        stunde = Math.floor(minu/60);
-        minu = minu - (stunde * 60);
-
-        // Countdown ausgeben
-        if (stunde == 0 && minu == 0) document.getElementById(countdown).innerHTML = "jetzt";
-        else if (stunde == 0) document.getElementById(countdown).innerHTML = "in " + minu + " min";
-        else document.getElementById(countdown).innerHTML = "in " + stunde + " h und " + minu + " min";
-    }
-
-}
-
-//Findet die derzeitige Uhrzeit und das aktuelle Datum in gewohnten Format
-function display_ct7(){ 
-    var x = new Date()
-    //var ampm = x.getHours( ) >= 12 ? '' : '';
-    hours = x.getHours();
-    hours = hours.toString().length==1? 0+hours.toString() : hours;
-    var minutes = x.getMinutes().toString()
-    minutes = minutes.length == 1 ? 0+minutes : minutes;
-    var seconds = x.getSeconds().toString()
-    seconds = seconds.length == 1 ? 0+seconds : seconds;
-    var month = (x.getMonth() +1).toString();
-    month = month.length == 1 ? 0+month : month;
-    var dt = x.getDate().toString();
-    dt = dt.length == 1 ? 0+dt : dt;
-    var x1 = dt + "." + month + "." + x.getFullYear(); 
-    //x1 = x1 + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
-    document.getElementById("aktZeit").innerHTML = hours + ":" +  minutes + ":" +  seconds;
-    document.getElementById("aktDatum").innerHTML = x1;
-    display_c7();
-
-    if (x.getSeconds()==0) einlesenFahrplan();
+// Ruft die Funktion erneuereText() alle 15 sec auf und alle Stunden die einlesenXml();
+function aufrufText(){
+    if (zaehlVariable == -1){
+        zaehlVariable = 1;
+        erneuereText();
+    } else if (zaehlVariable%240 == 0){
+        zaehlVariable = 1;
+        einlesenXml();
+    } else mytime = setTimeout('erneuereText()', 15000);
+    
+    zaehlVariable++;
 }
 
 //XML-Dokument, welches die Aktuellen Meldungen enthält wird ausgelesen
 function einlesenXml(){
     var xmlDoc;
+    
     if(typeof window.DOMParser != "undefined") {
         xmlhttp=new XMLHttpRequest();
         xmlhttp.open("GET","https://efa.sta.bz.it/apb/XML_DM_REQUEST?&locationServerActive=1&stateless=1&type_dm=any&name_dm=Brixen%20Brixen%20Dantestra%C3%9Fe&mode=direct",false);
-        if (xmlhttp.overrideMimeType){
-            xmlhttp.overrideMimeType('text/xml');
-        }
+        if (xmlhttp.overrideMimeType) xmlhttp.overrideMimeType('text/xml');
         xmlhttp.send();
         xmlDoc=xmlhttp.responseXML;
     }
@@ -251,24 +255,22 @@ function einlesenXml(){
 }
 
 function erneuereText(){
+
     document.getElementById("informationstext").innerHTML = "";
     document.getElementById("informationstext").innerHTML += "<h4 style=\"font-weight: bold;\">" + tagObj[textVariable].getElementsByTagName("infoLinkText")[0].childNodes[0].nodeValue + "</h4>";
     document.getElementById("informationstext").innerHTML += tagObj[textVariable].getElementsByTagName("content")[0].childNodes[0].nodeValue.replace(/<p>&nbsp;<\/p>/g, "");
-
-    for (let i = 0; i < 30; i++) {
-        document.getElementById("informationstext").innerHTML += "<br>";
-    }
-
+    for (let i = 0; i < 30; i++) document.getElementById("informationstext").innerHTML += "<br>";
+    
     textVariable++;
-
     if (tagObj.length == textVariable) textVariable=0;
 
     aufrufText();
 }
+
 
 //Hier werden alle benötigten Funktionen aufgerufen
 einlesenXml();
 einlesenWetter();
 einlesenFahrplan();
 einlesenTemperatur();
-display_c7();
+aufrufUhrzeit();
