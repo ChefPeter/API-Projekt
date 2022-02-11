@@ -3,20 +3,20 @@ let zaehlVariable = -1;
 let textVariable = 0;
 let tagObj;
 
-// Ruft die Funktion display_ct7() alle Sekunden auf
-function display_c7(){
+// Ruft die Funktion uhrzeit() alle Sekunden auf
+function aufrufUhrzeit(){
     var refresh=1000; // Refresh rate in milli sekunden
-    mytime=setTimeout('display_ct7()',refresh);
+    mytime=setTimeout('uhrzeit()',refresh);
 }
 
-// Ruft die Funktion einlesenWetter() alle 12 min auf
+// Ruft die Funktion einlesenWetter() alle 5 min auf
 function aufrufWetter(){
-    mytime = setTimeout('einlesenWetter()', 120000);
+    mytime = setTimeout('einlesenWetter()', 300000);
 }
 
 // Ruft die Funktion einlesenTemperatur() alle 5 min auf
 function aufrufTemp(){
-    mytime = setTimeout('einlesenTemperatur()', 50000);
+    mytime = setTimeout('einlesenTemperatur()', 300000);
 }
 
 // Ruft die Funktion erneuereText() alle 15 sec auf
@@ -210,24 +210,26 @@ function fahrplan(data){
 }
 
 //Findet die derzeitige Uhrzeit und das aktuelle Datum in gewohnten Format
-function display_ct7(){ 
-    var x = new Date()
-    //var ampm = x.getHours( ) >= 12 ? '' : '';
-    hours = x.getHours();
-    hours = hours.toString().length==1? 0+hours.toString() : hours;
-    var minutes = x.getMinutes().toString()
-    minutes = minutes.length == 1 ? 0+minutes : minutes;
-    var seconds = x.getSeconds().toString()
-    seconds = seconds.length == 1 ? 0+seconds : seconds;
+function uhrzeit(){
+
+    var x = new Date();
+    var hours = x.getHours();
+    var minutes = x.getMinutes().toString();
+    var seconds = x.getSeconds().toString();
     var month = (x.getMonth() +1).toString();
-    month = month.length == 1 ? 0+month : month;
     var dt = x.getDate().toString();
+    var datum = "";
+    
+    hours = hours.toString().length==1? 0+hours.toString() : hours;
+    minutes = minutes.length == 1 ? 0+minutes : minutes;
+    seconds = seconds.length == 1 ? 0+seconds : seconds;
+    month = month.length == 1 ? 0+month : month;
     dt = dt.length == 1 ? 0+dt : dt;
-    var x1 = dt + "." + month + "." + x.getFullYear(); 
-    //x1 = x1 + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
+    datum = dt + "." + month + "." + x.getFullYear(); 
+
     document.getElementById("aktZeit").innerHTML = hours + ":" +  minutes + ":" +  seconds;
-    document.getElementById("aktDatum").innerHTML = x1;
-    display_c7();
+    document.getElementById("aktDatum").innerHTML = datum;
+    aufrufUhrzeit();
 
     if (x.getSeconds()==0) einlesenFahrplan();
 }
@@ -235,6 +237,7 @@ function display_ct7(){
 //XML-Dokument, welches die Aktuellen Meldungen enthält wird ausgelesen
 function einlesenXml(){
     var xmlDoc;
+    
     if(typeof window.DOMParser != "undefined") {
         xmlhttp=new XMLHttpRequest();
         xmlhttp.open("GET","https://efa.sta.bz.it/apb/XML_DM_REQUEST?&locationServerActive=1&stateless=1&type_dm=any&name_dm=Brixen%20Brixen%20Dantestra%C3%9Fe&mode=direct",false);
@@ -271,4 +274,4 @@ einlesenXml();
 einlesenWetter();
 einlesenFahrplan();
 einlesenTemperatur();
-display_c7();
+aufrufUhrzeit();

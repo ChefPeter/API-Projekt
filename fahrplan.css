@@ -4,17 +4,14 @@
     font-family: Arial;
 }
 
+.flex{
+    display: flex;
+}
+
 #fahrplan{
     margin: 2%;
     min-height: 96%;
     max-height: 96%;
-}
-
-#datum{
-    display: flex;
-    justify-content: right;
-    font-weight: 550;
-    min-width: 35%;
 }
 
 #abfahrt{
@@ -24,22 +21,47 @@
     min-width: 65%;
 }
 
-#allgemein{ 
-    height: 65px; 
-    align-items: center;
+
+/* Uhrzeit */
+#datum{
+    display: flex;
+    justify-content: right;
+    font-weight: 550;
+    min-width: 35%;
 }
 
-#allgemeinMg{
-    height: 65px; 
-    align-items: center;
+#zeit{
+    background-color: rgb(242, 242, 242);
+    justify-content: right;
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    border-color: rgb(13, 122, 172);
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height:0%;
 }
 
+
+/* Tabelle */
+.table, table-striped{
+    max-height: 100%;
+    min-height: 100%;
+}
 
 #tabelle{
     display: flex;
     margin-top: 30px;
     min-height: 82vh;
     max-height: 82vh;
+}
+
+#tabellenRand{
+    border-radius: 18px;
+    border: 3px solid rgb(0, 0, 0);
+    border-color: rgb(13, 122, 172);
+    border-collapse: collapse;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 1480px){
@@ -53,95 +75,6 @@
         max-width: 60%;
         min-width: 60%;
     }
-}
-
-.table, table-striped{
-    max-height: 100%;
-    min-height: 100%;
-} 
-
-#tabellenRand{
-    border-radius: 18px;
-    border: 3px solid rgb(0, 0, 0);
-    border-color: rgb(13, 122, 172);
-    border-collapse: collapse;
-    overflow: hidden;
-}
-
-.ort{
-    color: rgb(13, 122, 172);
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.zentriert{
-    justify-content: center;
-    display: flex;
-    margin-top: 8px;
-}
-
-#wetterart{
-    margin: 10px;
-    font-weight: bold;
-}
-
-#wetterartMg{
-    margin: 10px;
-    font-weight: bold;
-}
-
-.hintergrund{
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
-    border-radius: 18px;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-.wetterdaten{
-    font-weight: bold;
-}
-
-#informationstext{
-    border: 3px solid black; 
-    border-color: rgb(13, 122, 172);
-    border-radius: 18px;
-    margin-left: 3%;
-    padding: 10px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    min-height: fit-content;
-    background-color: rgb(242, 242, 242);
-    margin-top: 3%;
-}
-
-.bilder{
-    height: 25px;
-}
-
-.wetter{
-    padding: 10px;
-    border-radius: 18px;
-    background-image: url("");
-    background-size: 110%;
-    max-height: 30vh;
-}
-
-.wetterAlgemein{
-    margin-left: 3%;
-    min-width: 45.5%;
-    max-height: 45.5%;
-}
-
-.wetterMg{
-    padding: 10px;
-    border-radius: 18px;
-    background-image: url("");
-    background-size: 110%;
-    max-height: 30vh;
-}
-
-.flex{
-    display: flex;
 }
 
 .bus{
@@ -165,18 +98,86 @@
     color: white;
 }
 
-#zeit{
-    background-color: rgb(242, 242, 242);
-    justify-content: right;
-    border-radius: 10px;
-    border: 2px solid rgb(0, 0, 0);
-    border-color: rgb(13, 122, 172);
-    padding: 3px;
-    padding-left: 15px;
-    padding-right: 15px;
-    line-height:0%;
+
+/* Wetter */
+.ort{
+    color: rgb(13, 122, 172);
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-.countdowns{
-    font-weight: lighter;
+.zentriert{
+    justify-content: center;
+    display: flex;
+    margin-top: 8px;
+}
+
+.hintergrund{
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    border-radius: 18px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.wetterdaten{
+    font-weight: bold;
+}
+
+.bilder{
+    height: 25px;
+}
+
+.wetterAlgemein{
+    margin-left: 3%;
+    min-width: 45.5%;
+    max-height: 45.5%;
+}
+
+.wetter{
+    padding: 10px;
+    border-radius: 18px;
+    background-image: url("");
+    background-size: 110%;
+}
+
+.wetterMg{
+    padding: 10px;
+    border-radius: 18px;
+    background-image: url("");
+    background-size: 110%;
+}
+
+#wetterart{
+    margin: 10px;
+    font-weight: bold;
+}
+
+#wetterartMg{
+    margin: 10px;
+    font-weight: bold;
+}
+
+#allgemein{ 
+    height: 65px; 
+    align-items: center;
+}
+
+#allgemeinMg{
+    height: 65px; 
+    align-items: center;
+}
+
+
+/* Informationstext */
+#informationstext{
+    border: 3px solid black; 
+    border-color: rgb(13, 122, 172);
+    border-radius: 18px;
+    margin-left: 3%;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-height: fit-content;
+    background-color: rgb(242, 242, 242);
+    margin-top: 3%;
 }
