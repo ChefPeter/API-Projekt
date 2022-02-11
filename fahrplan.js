@@ -57,6 +57,7 @@ function fahrplan(data){
     let stunde = 0;
 
     for(let i=0; i<14; i++){
+        
         // Den Linien IDs zuweisen
         linieId = "linie" + i;
         zielId = "ziel" + i;
@@ -169,7 +170,7 @@ function wetter(jsonData){
     let bilder = [];
     let beschriftungen = {};
 
-    //Es werden die durchschnittlichen temperaturen und windgeschwindigkeiten für den nächsten Tag herausgefunden
+    //Es werden die durchschnittliche Windgeschwindigkeit, die Minimaltemperatur, die Maximaltemperatur und das Wetter mit den Dazugehörigen Bildern berechnet
     for (let i=0; i<16; i++){
         if (jsonData.list[i].dt_txt[9] == string[9]){
             if (jsonData.list[i].main.temp_min < minTemp) minTemp = jsonData.list[i].main.temp_min;
@@ -256,6 +257,7 @@ function einlesenXml(){
     aufrufText();
 }
 
+//Erneuert den Inormationstext
 function erneuereText(){
 
     document.getElementById("informationstext").innerHTML = "";
