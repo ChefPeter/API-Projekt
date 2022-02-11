@@ -273,8 +273,8 @@ function erneuereText(){
 
 
 //Hier werden alle benötigten Funktionen aufgerufen
+aufrufUhrzeit();
 einlesenXml();
 einlesenWetter();
 einlesenFahrplan();
 einlesenTemperatur();
-aufrufUhrzeit();
